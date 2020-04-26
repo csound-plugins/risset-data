@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "plugins": {
-        "else@1.0.0": "https://gitlab.com/gesellkammer/cspm-data/-/blob/master/plugins/emplugins/v1.0.0/manifests/else.cspm.json",
-        "poly@1.0.0": "https://gitlab.com/gesellkammer/cspm-data/-/blob/master/plugins/emplugins/v1.0.0/manifests/poly.cspm.json",
+        "else@0.2.0": "plugins/emplugins/0.2.0/else.cspm.json",
+        "poly@0.2.0": "plugins/emplugins/0.2.0/poly.cspm.json"
     }
 }
