@@ -15,7 +15,7 @@
             "build_platform": "10.14.0"
         },
         "windows": {
-            "url": "win32/libpoly.dll",
+            "url": "windows/libpoly.dll",
             "build_platform": "Windows 10"
         }
     },

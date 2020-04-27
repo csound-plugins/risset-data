@@ -77,7 +77,7 @@ Then, at the path declared create the given file (or copy an existing one and mo
     },
     "opcodes": [
         "plugin1", "plugin2"
-    ]
+    ],
     "author": "John Doe",
     "email": "john.doe@email.com",
     "manual": "myplugin.zip"

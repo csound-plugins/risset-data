@@ -15,7 +15,7 @@
             "build_platform": "10.14.0"
         },
         "windows": {
-            "url": "win32/libelse.dll",
+            "url": "windows/libelse.dll",
             "build_platform": "Windows 10"
         }
     },
