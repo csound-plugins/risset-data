@@ -2,6 +2,8 @@
     "version": "0.0.1",
     "plugins": {
         "else@0.2.0": "plugins/emplugins/0.2.0/else.cspm.json",
-        "poly@0.2.0": "plugins/emplugins/0.2.0/poly.cspm.json"
+        "poly@0.2.0": "plugins/emplugins/0.2.0/poly.cspm.json",
+        "klib@0.2.0": "plugins/emplugins/0.2.0/klib.cspm.json",
+        "jsfx@0.2.0": "plugins/emplugins/0.2.0/jsfx.cspm.json"
     }
 }

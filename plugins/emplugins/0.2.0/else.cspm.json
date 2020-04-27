@@ -13,6 +13,10 @@
         "macos": {
             "url": "macos/libelse.dylib",
             "build_platform": "10.14.0"
+        },
+        "win32": {
+            "url": "win32/libelse.dll",
+            "build_platform": "Windows 10"
         }
     },
     "opcodes": [
