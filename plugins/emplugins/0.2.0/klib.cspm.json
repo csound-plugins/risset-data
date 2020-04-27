@@ -14,7 +14,7 @@
             "url": "macos/libklib.dylib",
             "build_platform": "10.14.0"
         },
-        "win32": {
+        "windows": {
             "url": "win32/libklib.dll",
             "build_platform": "Windows 10"
         }
