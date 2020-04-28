@@ -19,7 +19,7 @@
             "build_platform": "Windows 10"
         }
     },
-    "opcodes": ["poly", "polyseq", "poly1"],
+    "opcodes": ["poly", "polyseq", "poly0"],
     "author": "Eduardo Moguillansky",
     "email": "eduardo.moguillansky@gmail.com",
     "manual": "XXX.zip",
