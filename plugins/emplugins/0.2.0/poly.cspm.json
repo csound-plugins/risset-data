@@ -11,7 +11,7 @@
             "build_platform": "Ubuntu 16.04"
         },
         "macos": {
-            "url": "macos/libpoly.so",
+            "url": "macos/libpoly.dylib",
             "build_platform": "10.14.0"
         },
         "windows": {
