@@ -2,8 +2,9 @@
     "version": "0.0.1",
     "plugins": {
         "else@0.2.0": "plugins/emplugins/0.2.0/else/else.json",
-        "poly@0.2.0": "plugins/emplugins/0.2.0/poly.json",
-        "klib@0.2.0": "plugins/emplugins/0.2.0/klib.json",
-        "jsfx@0.2.0": "plugins/emplugins/0.2.0/jsfx.json"
+        "poly@0.2.0": "plugins/emplugins/0.2.0/poly/poly.json",
+        "klib@0.2.0": "plugins/emplugins/0.2.0/klib/klib.json",
+        "jsfx@0.2.0": "plugins/emplugins/0.2.0/jsfx/jsfx.json",
+        "mverb@1.3.7": "plugins/gogins/1.3.7/mverb/mverb.json"
     }
 }
