@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "plugins": {
-        "else@0.2.0": "plugins/emplugins/0.2.0/else.json",
+        "else@0.2.0": "plugins/emplugins/0.2.0/else/else.json",
         "poly@0.2.0": "plugins/emplugins/0.2.0/poly.json",
         "klib@0.2.0": "plugins/emplugins/0.2.0/klib.json",
         "jsfx@0.2.0": "plugins/emplugins/0.2.0/jsfx.json"
