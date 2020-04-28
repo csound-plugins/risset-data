@@ -11,7 +11,7 @@
             "build_platform": "Ubuntu 18.04"
         }
     },
-    "opcodes": ["mverb"],
+    "opcodes": ["MVerb"],
     "author": "Michael Goggins",
     "email": "michael.gogins@gmail.com",
     "repository": "https://github.com/gogins/csound-extended"
