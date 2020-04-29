@@ -3,7 +3,10 @@
 This is a repository for csound plugins to be used in coordination
 with [risset], the csound package manager.
 
-# Installing plugins
+This repository is **ONLY** for storage of binaries, not for source code
+
+
+## Installing plugins
 
 In order to install and manage the plugins defined here, use the utility `risset`. To
 install `risset` do either
@@ -27,20 +30,13 @@ risset list          # list all available plugins
 risset install poly  # install/update the poly plugin
 ```
 
-## Storage vs Development
 
-This repository is **ONLY** for storage of binaries, not for source code. In the future
-this storage will be extended to *user-defined-opcodes* developed in the *csound* language
-itself, which will also be installable via `risset`
-
--------
-
-# Contributing
+## Contributing
 
 In order to add a plugin or a collection of plugins to this repository, fork
 this repository and create a PR.
 
-## Anatomy of a plugin declaration
+### Anatomy of a plugin declaration
 
 Example of a plugin named "myplugin", developed by "Alice" (NB: the name of the manifest can be
 any name with the .json suffix). The folder structure could be:
@@ -105,11 +101,9 @@ Then, at the path declared above she creates the manifest file
 
 ```
 
-Then copy the binaries for the declared platforms to the folder `plugins/myplugins/<version>/linux`, `plugins/myplugins/<version>/macos`,
-`plugins/myplugins/<version>/windows`, as needed.
+Then she copies the binaries for the declared platforms to the location indicated in the manifest file. In this case the files are declared in the same folder as the manifest itself.
 
-If a plugin is not available under a given platform don't include an entry for that platform
-(see the plugin `emplugins/jsfx` for an example where windows is not supported)
-
+**NB: If a plugin is not available under a given platform don't include an entry for that
+platform (see the plugin `emplugins/jsfx` for an example where windows is not supported)**
 
 [risset]: https://github.com/csound-plugins/risset
