@@ -1,0 +1,24 @@
+{
+    "name": "rory",
+    "libname": "librory",
+    "version": "0.2.0",
+    "short_description": "Opcodes to save/recall channels, triggers, etc",
+    "long_description": "Miscellaneous opcodes to save/recall channel state, triggerable envelopes and others",
+    "csound_version": "6.14",
+    "binaries": {
+        "linux": {
+            "url": "librory.so",
+            "build_platform": "Ubuntu 16.04"
+        },
+        "macos": {
+            "url": "librory.dylib",
+            "build_platform": "10.14.0"
+        },
+    },
+    "opcodes": [
+        "channelStateSave", "channelStateRecoll", "trigLinseg", "trigExpseg"
+    ],
+    "author": "Rory Walsh",
+    "email": "name@mail.com",
+    "repository": "https://github.com/csound-plugins/csound-plugins"
+}
