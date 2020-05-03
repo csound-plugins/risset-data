@@ -13,7 +13,7 @@
         "macos": {
             "url": "librory.dylib",
             "build_platform": "10.14.0"
-        },
+        }
     },
     "opcodes": [
         "channelStateSave", "channelStateRecoll", "trigLinseg", "trigExpseg"
