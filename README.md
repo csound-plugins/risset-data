@@ -1,3 +1,6 @@
+![risset](assets/risset-title.svg)
+
+
 # risset - a csound package manager - Plugin Repository
 
 This is a repository for csound plugins to be used in coordination
