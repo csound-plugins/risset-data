@@ -7,6 +7,7 @@ Miscellaneous plugins
   * [accum](opcodes/accum.md): Simple accumulator of scalar values
   * [atstop](opcodes/atstop.md): Schedule an instrument at the end of the current instrument
   * [crackle](opcodes/crackle.md): generates noise based on a chaotic equation
+  * [defer](opcodes/defer.md): Run an opcode at the end of an event
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
   * [file_exists](opcodes/file_exists.md): Returns 1 if a file exists and can be read
