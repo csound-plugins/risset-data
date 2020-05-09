@@ -33,6 +33,11 @@ risset list          # list all available plugins
 risset install poly  # install/update the poly plugin
 ```
 
+## Documentation
+
+Manual pages for each opcode can be found here: https://github.com/csound-plugins/risset-data/tree/master/docs
+
+
 
 ## Contributing
 
