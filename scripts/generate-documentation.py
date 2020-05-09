@@ -235,7 +235,8 @@ def get_abstract(manpage: Path, opcode: str) -> str:
         return ""
 
 
-def generate_index(manifests:List[Manifest], manpages: Dict[str, Path], indexfile:str=None) -> None:
+def generate_index(manifests:List[Manifest], manpages: Dict[str, Path],
+                   indexfile:str=None, create_readme=True) -> None:
     lines = []
     _ = lines.append
     _("# Csound Plugins")
@@ -272,6 +273,9 @@ def generate_index(manifests:List[Manifest], manpages: Dict[str, Path], indexfil
     with open(indexfile, "w") as f:
         f.write("\n".join(lines))
 
+    if create_readme:
+        shutil.copy(indexfile, indexfile.parent/"README.md")
+
 
 def build_mkdocs():
     mkdocs = shutil.which("mkdocs")
@@ -279,7 +283,7 @@ def build_mkdocs():
         errormsg("Asked to build html documentation, but mkdocs was not found")
         return
     subprocess.call([mkdocs, "build"])
-    
+
 
 ##  -------------------------------------------------------
 
