@@ -1,4 +1,4 @@
-![risset](assets/risset-title.svg)
+![risset](assets/risset-title.png)
 
 
 # risset - a csound package manager - Plugin Repository
