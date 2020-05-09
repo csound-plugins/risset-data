@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>MVerb - Csound Plugins</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/syntax-highlighting.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MVerb";
+    var mkdocs_page_input_path = "opcodes/MVerb.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Csound Plugins</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Csound Plugins</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Opcodes</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="MVerb.html">MVerb</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#mverb">MVerb</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#description">Description</a></li>
+        
+            <li><a class="toctree-l4" href="#syntax">Syntax</a></li>
+        
+            <li><a class="toctree-l4" href="#initialization">Initialization</a></li>
+        
+            <li><a class="toctree-l4" href="#performance">Performance</a></li>
+        
+            <li><a class="toctree-l4" href="#credits">Credits</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accum.html">accum</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="atstop.html">atstop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="channelStateRecall.html">channelStateRecall</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="channelStateSave.html">channelStateSave</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="crackle.html">crackle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="defer.html">defer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="deref.html">deref</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_exists.html">dict_exists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_free.html">dict_free</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_get.html">dict_get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_iter.html">dict_iter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_new.html">dict_new</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_print.html">dict_print</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_query.html">dict_query</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_set.html">dict_set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="dict_size.html">dict_size</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="diode_ringmod.html">diode_ringmod</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="file_exists.html">file_exists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="frac2int.html">frac2int</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="jsfx.html">jsfx</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="jsfx_getslider.html">jsfx_setslider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="jsfx_new.html">jsfx_new</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="jsfx_play.html">jsfx_play</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="jsfx_setslider.html">jsfx_setslider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="lfnoise.html">lfnoise</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="linenv.html">linenv</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="memview.html">memview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="poly.html">poly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="poly0.html">poly0</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="polyseq.html">polyseq</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_at.html">pool_at</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_capacity.html">pool_capacity</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_gen.html">pool_gen</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_new.html">pool_new</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_pop.html">pool_pop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_push.html">pool_push</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pool_size.html">pool_size</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pread.html">pread</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="pwrite.html">pwrite</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ramptrig.html">ramptrig</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ref.html">ref</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="refvalid.html">refvalid</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="schmitt.html">schmitt</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sigmdrive.html">sigmdrive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="standardchaos.html">standardchaos</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="strcache.html">strcache</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="strview.html">strview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="trigExpseg.html">trigExpseg</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="trigLinseg.html">trigLinseg</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="tubeharmonics.html">tubeharmonics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="uniqinstance.html">uniqinstance</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="xtracycles.html">xtracycles</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Csound Plugins</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Opcodes &raquo;</li>
+        
+      
+    
+    <li>MVerb</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="mverb">MVerb</h1>
+<p>MVerb - Implements Jon Christopher Nelson's waveguide mesh reverb.</p>
+<h2 id="description">Description</h2>
+<p>Implements Jon Christopher Nelson's waveguide mesh reverb, originally created 
+as a Cabbage VST plugin, as a C++ Csound plugin opcode. </p>
+<p>MVerb is a modified 5-by-5 2D waveguide mesh reverberator. It is highly 
+flexible and can generate compelling and unique effects timbres ranging from 
+traditional spaces to infinite morphing spaces or the simulation of metallic 
+plates or cymbals. The plugin incorporates a 10-band parametric equalizer for 
+timbral control and delay randomization to create more unusual effects.</p>
+<h2 id="syntax">Syntax</h2>
+<div class="codehilite"><pre><span></span>aoutleft, aoutright MVerb ainleft, ainright, Spreset [[, Sparameter, kvalue ],...]
+</pre></div>
+
+
+<h2 id="initialization">Initialization</h2>
+<p><em>Spreset</em> -- Name of a built-in preset, one of: "Small Hall", "Medium Hall", 
+            "Large Hall", "Huge Hall", "Infinite Space", "Dry Echo", 
+            "Right-Left", "Comby 1", "Comby 2", "Octaves", "TriTones", 
+            "Big Dark", "Metallic 1", "Weird 1", "Weird 2", "Weird 3", 
+            "Large Cymbal 1", "Large Cymbal 2", "Splash Cymbal 1", 
+            "Splash Cymbal 2", "Turkish Cymbal", "Gong", "Small Gong", 
+            "Metallic 2", "Tubular Metallic", "Cowbell", "Finger Cymbal", 
+            "Bell", "Chinese Ball", "Cymbal Cap", "Baking Sheet", 
+            "Frying Pan", "Squeak", "Trellace", "Monkey Wrench".</p>
+<p>The order of initialization is:</p>
+<ol>
+<li>All parameters have default values.</li>
+<li>The user's choice of <em>Spreset</em> determines most of these parameters.</li>
+<li>The user can override any number of default or preset parameters using 
+   optional opcode parameters.</li>
+</ol>
+<h2 id="performance">Performance</h2>
+<p><em>aoutleft</em> - Left channel of the output signal.</p>
+<p><em>aoutright</em> - Right channel of the output signal.</p>
+<p><em>ainleft</em> - Left channel of the input signal.</p>
+<p><em>ainright</em> - Right channel of the input signal.</p>
+<p><em>[[, Sparameter, xvalue ],...]</em> -- Any number of the following control 
+                                   parameters, as <em>name, value</em> pairs. These 
+                                   are real-valued unless they are strings.</p>
+<ul>
+<li><em>wet</em> -- Fraction of the output signal that is reverberated. Not in a preset, must be set as an opcode parameter.</li>
+<li><em>res1</em> -- Resonant frequency of node 1 in the mesh.</li>
+<li><em>res2</em> -- Resonant frequency of node 2 in the mesh.</li>
+<li><em>res3</em> -- Resonant frequency of node 3 in the mesh.</li>
+<li><em>res4</em> -- Resonant frequency of node 4 in the mesh.</li>
+<li><em>res5</em> -- Resonant frequency of node 5 in the mesh.</li>
+<li><em>res6</em> -- Resonant frequency of node 6 in the mesh.</li>
+<li><em>res7</em> -- Resonant frequency of node 7 in the mesh.</li>
+<li><em>res8</em> -- Resonant frequency of node 8 in the mesh.</li>
+<li><em>res9</em> -- Resonant frequency of node 9 in the mesh.</li>
+<li><em>res10</em> -- Resonant frequency of node 10 in the mesh.</li>
+<li><em>res11</em> -- Resonant frequency of node 11 in the mesh.</li>
+<li><em>res12</em> -- Resonant frequency of node 12 in the mesh.</li>
+<li><em>res13</em> -- Resonant frequency of node 13 in the mesh.</li>
+<li><em>res14</em> -- Resonant frequency of node 14 in the mesh.</li>
+<li><em>res15</em> -- Resonant frequency of node 15 in the mesh.</li>
+<li><em>res16</em> -- Resonant frequency of node 16 in the mesh.</li>
+<li><em>res17</em> -- Resonant frequency of node 17 in the mesh.</li>
+<li><em>res18</em> -- Resonant frequency of node 18 in the mesh.</li>
+<li><em>res19</em> -- Resonant frequency of node 19 in the mesh.</li>
+<li><em>res20</em> -- Resonant frequency of node 20 in the mesh.</li>
+<li><em>res21</em> -- Resonant frequency of node 21 in the mesh.</li>
+<li><em>res22</em> -- Resonant frequency of node 22 in the mesh.</li>
+<li><em>res23</em> -- Resonant frequency of node 23 in the mesh.</li>
+<li><em>res24</em> -- Resonant frequency of node 24 in the mesh.</li>
+<li><em>res25</em> -- Resonant frequency of node 25 in the mesh.</li>
+<li><em>ERselect</em> -- Name of the early reflections preset, one of: "None", "Small", "Medium", "Large", "Huge", "Long Random", "Short Backwards", "Long Backwards", "Strange1", "Strange2".</li>
+<li><em>ERamp</em> -- Amplitude of early reflections.</li>
+<li><em>DFact</em> -- Amount (size) of early reflections.</li>
+<li><em>FB</em> -- Delay feedback (size) of mesh.</li>
+<li><em>FBclear</em> -- If true (1), clears all feedbacks in the mesh; if false (0), enables feedbacks.</li>
+<li><em>Q</em> -- Q of the equalizer filters.</li>
+<li><em>EQselect</em> -- Name of the equalization preset, one of: "flat", "high cut 1", "high cut 2", "low cut 1", "low cut 2", "band pass 1", "band pass 2", "2 bands", "3 bands", "evens", "odds".</li>
+<li><em>eq1</em> -- Gain of equalizer band 1.</li>
+<li><em>eq2</em> -- Gain of equalizer band 2.</li>
+<li><em>eq3</em> -- Gain of equalizer band 3.</li>
+<li><em>eq4</em> -- Gain of equalizer band 4.</li>
+<li><em>eq5</em> -- Gain of equalizer band 5.</li>
+<li><em>eq6</em> -- Gain of equalizer band 6.</li>
+<li><em>eq7</em> -- Gain of equalizer band 7.</li>
+<li><em>eq8</em> -- Gain of equalizer band 8.</li>
+<li><em>eq9</em> -- Gain of equalizer band 9.</li>
+<li><em>eq10</em> -- Gain of equalizer band 10.</li>
+<li><em>random</em> -- Whether (1) or not (0) the randomization of mesh delays is enabled. Not in a preset, must be set as an opcode parameter.</li>
+<li><em>rslow</em> -- Lower limit of frequency of randomization of mesh delay times. Not in a preset, must be set as an opcode parameter.</li>
+<li><em>rfast</em> -- Upper limit of frequency of randomization of mesh delay times.  Not in a preset, must be set as an opcode parameter.</li>
+<li><em>rmax</em> -- Maximum random deviation of mesh delay times. Not in a preset, must be set as an opcode parameter.</li>
+<li><em>random_seed</em> -- Optional seed for the random number generator used by the delay time randomizers. If not set, the C++ library selects a seed. Not in a preset, must be set as an opcode parameter.</li>
+<li><em>print</em> -- Optional flag to print all parameter values (at initialization time only) to the Csound message console. Not in a preset, must be set as an opcode parameter.</li>
+</ul>
+<p>The order of processing is:</p>
+<ol>
+<li>2 DC blockers for the stereo input signal.</li>
+<li>2 multitap delays for stereo early reflections.</li>
+<li>25 mesh nodes for the reverb, each with:<ol>
+<li>4 variable delay lines, with optionally randomized delay times.</li>
+<li>4 10-band equalizers, each with:    <ol>
+<li>10 parametric biquad filters.</li>
+<li>1 level balancer.</li>
+<li>1 DC blocker.        </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>2 DC blockers for the stereo output signal.</li>
+</ol>
+<h2 id="credits">Credits</h2>
+<p>Jon Christopher Nelson wrote the original Cabbage VST plugin.</p>
+<p>Michael Gogins adapted Nelson's plugin as a Csound plugin opcode in C++.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="accum.html" class="btn btn-neutral float-right" title="accum">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Csound Plugins"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="accum.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
