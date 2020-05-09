@@ -77,3 +77,7 @@ Run multiple copies of an opcode in parallel/series
 
 Opcodes to save/recall channels, triggers, etc
 
+  * [channelStateRecall](opcodes/channelStateRecall.md): Recalls channel data saved to a file via `channelStateSave`
+  * [channelStateSave](opcodes/channelStateSave.md): Saves all channel data to file
+  * [trigExpseg](opcodes/trigExpseg.md): Trace a series of exponential segments between specified points.
+  * [trigLinseg](opcodes/trigLinseg.md): Trace a series of line segments between specified points.

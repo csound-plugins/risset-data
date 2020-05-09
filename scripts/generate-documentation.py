@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 import json
 import shutil
+import subprocess
 from dataclasses import dataclass
 from typing import List, Dict, Optional
 
@@ -272,11 +273,21 @@ def generate_index(manifests:List[Manifest], manpages: Dict[str, Path], indexfil
         f.write("\n".join(lines))
 
 
+def build_mkdocs():
+    mkdocs = shutil.which("mkdocs")
+    if not mkdocs:
+        errormsg("Asked to build html documentation, but mkdocs was not found")
+        return
+    subprocess.call([mkdocs, "build"])
+    
+
 ##  -------------------------------------------------------
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--indexfile", default="", help="Location of the plugins.json file")
 parser.add_argument("--debug", action="store_true")
+parser.add_argument("--html", action="store_true",
+                    help="Build html documentation. This requires mkdocs to be installed")
 args = parser.parse_args()
 
 if args.debug:
@@ -299,3 +310,6 @@ docs_folder = indexfile.parent/"docs"
 manpages = index_manpages(manifests)
 compile_docs(docs_folder, manifests)
 generate_index(manifests, manpages)
+
+if args.html:
+    build_mkdocs()

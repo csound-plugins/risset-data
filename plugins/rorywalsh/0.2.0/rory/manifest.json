@@ -16,7 +16,7 @@
         }
     },
     "opcodes": [
-        "channelStateSave", "channelStateRecoll", "trigLinseg", "trigExpseg"
+        "channelStateSave", "channelStateRecall", "trigLinseg", "trigExpseg"
     ],
     "author": "Rory Walsh",
     "email": "name@mail.com",
