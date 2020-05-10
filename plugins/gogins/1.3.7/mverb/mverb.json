@@ -3,7 +3,7 @@
     "libname": "libmverb",
     "version": "1.3.7",
     "short_description": "Artificial reverb based on a 2D waveguide mesh",
-    "long_description": "Verb is a modified 5-by-5 2D waveguide mesh reverberator. It is highly flexible and can generate ompelling and unique timbres ranging from traditional spaces to infinite morphing spaces or the simulation of metallic plates or cymbals. The plugin incorporates a 10-band parametric equalizer for timbral control and delay randomization to create more unusual effects.",
+    "long_description": "MVerb is a modified 5-by-5 2D waveguide mesh reverberator. It is highly flexible and can generate compelling and unique timbres ranging from traditional spaces to infinite morphing spaces or the simulation of metallic plates or cymbals. The plugin incorporates a 10-band parametric equalizer for timbral control and delay randomization to create more unusual effects.",
     "csound_version": "6.14",
     "binaries": {
         "linux": {
