@@ -1,7 +1,7 @@
 {
     "name": "rory",
     "libname": "librory",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "short_description": "Opcodes to save/recall channels, triggers, etc",
     "long_description": "Miscellaneous opcodes to save/recall channel state, triggerable envelopes and others",
     "csound_version": "6.14",

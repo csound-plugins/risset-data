@@ -1,7 +1,7 @@
 {
     "name": "jsfx",
     "libname": "libjsfx",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "short_description": "Jesusonics effects in csound",
     "long_description": "These plugins allow csound to load and interact with jsusfx plugins",
     "csound_version": "6.14",

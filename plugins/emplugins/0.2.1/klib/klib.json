@@ -1,7 +1,7 @@
 {
     "name": "klib",
     "libname": "libklib",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "short_description": "hashtable / pool / string cache plugins",
     "long_description": "Container plugins. Very efficient hashtable, an int pool to manage resources, string cache to pass/store strings as integers",
     "csound_version": "6.14",

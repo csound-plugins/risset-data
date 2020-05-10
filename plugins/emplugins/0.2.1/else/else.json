@@ -1,7 +1,7 @@
 {
     "name": "else",
     "libname": "libelse",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "short_description": "Miscellaneous plugins",
     "long_description": "Miscellaneous plugins, some ports of supercollider, puredata/else, jsfx",
     "csound_version": "6.14",
