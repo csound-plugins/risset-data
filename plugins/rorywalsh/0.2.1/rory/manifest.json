@@ -13,6 +13,10 @@
         "macos": {
             "url": "librory.dylib",
             "build_platform": "10.14.0"
+        },
+        "windows": {
+            "url": "librory.dll",
+            "build_platform": "Windows 10"
         }
     },
     "opcodes": [

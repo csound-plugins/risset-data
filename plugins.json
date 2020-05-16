@@ -5,6 +5,8 @@
         "poly@0.2.1": "plugins/emplugins/0.2.1/poly/poly.json",
         "klib@0.2.1": "plugins/emplugins/0.2.1/klib/klib.json",
         "jsfx@0.2.1": "plugins/emplugins/0.2.1/jsfx/jsfx.json",
+        "pathtools@0.2.1": "plugins/emplugins/0.2.1/pathtools/manifest.json",
+                
         "mverb@1.3.7": "plugins/gogins/1.3.7/mverb/mverb.json",
         "rory@0.2.1": "plugins/rorywalsh/0.2.1/rory/manifest.json"
     }
