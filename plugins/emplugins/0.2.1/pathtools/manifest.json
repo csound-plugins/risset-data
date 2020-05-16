@@ -1,9 +1,12 @@
 {
-    "name": "klib",
-    "libname": "libklib",
+    "name": "pathtools",
+    "libname": "libpathtools",
     "version": "0.2.1",
-    "short_description": "hashtable / pool / string cache plugins",
-    "long_description": "Container plugins. Very efficient hashtable, an int pool to manage resources, string cache to pass/store strings as integers",
+    "short_description": "Cross-platform path handling",
+    "long_description": "Opcodes to handle path operations (join, split, split extension, make absolute, etc.) in a
+cross-platform way. All opcodes are aware off the platform they are running and make it possible
+to write code which works in unix and windows. This plugin includes opcodes to query the current
+platform, the directory of the loaded script, environment variables, etc.",
     "csound_version": "6.14",
     "binaries": {
         "linux": {
@@ -20,10 +23,23 @@
         }
     },
     "opcodes": [
-        "dict_exists", "dict_free", "dict_get", "dict_iter", "dict_new", "dict_print",
-        "dict_query", "dict_set", "dict_size", "pool_at", "pool_capacity", "pool_gen",
-        "pool_new", "pool_pop", "pool_push", "pool_size",
-        "strcache", "strview"
+         "findFileInPath",
+         "getEnvVar",
+      
+         "pathAbsolute",
+         "pathIsAbsolute",
+      
+         "pathJoin",
+         "pathNative",
+      
+         "pathSplit",
+         "pathSplitk",
+      
+         "pathSplitExt",
+         "pathSplitExtk",
+
+         "scriptDir",
+         "sysPlatform"        
     ],
     "author": "Eduardo Moguillansky",
     "email": "eduardo.moguillansky@gmail.com",
