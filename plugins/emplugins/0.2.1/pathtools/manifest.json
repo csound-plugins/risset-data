@@ -3,10 +3,7 @@
     "libname": "libpathtools",
     "version": "0.2.1",
     "short_description": "Cross-platform path handling",
-    "long_description": "Opcodes to handle path operations (join, split, split extension, make absolute, etc.) in a
-cross-platform way. All opcodes are aware off the platform they are running and make it possible
-to write code which works in unix and windows. This plugin includes opcodes to query the current
-platform, the directory of the loaded script, environment variables, etc.",
+    "long_description": "Opcodes to handle path operations (join, split, split extension, make absolute, etc.) in a cross-platform way. All opcodes are aware off the platform they are running and make it possible to write code which works in unix and windows. This plugin includes opcodes to query the current platform, the directory of the loaded script, environment variables, etc.",
     "csound_version": "6.14",
     "binaries": {
         "linux": {
