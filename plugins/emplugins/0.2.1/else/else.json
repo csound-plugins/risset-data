@@ -22,7 +22,8 @@
     "opcodes": [
         "accum",
         "atstop",
-        "crackle", 
+        "crackle",
+        "errormsg", 
         "defer",
         "deref",
         "diode_ringmod",
