@@ -14,6 +14,7 @@ plates or cymbals. The plugin incorporates a 10-band parametric equalizer for
 timbral control and delay randomization to create more unusual effects.
 
 ## Syntax
+
 ```
 aoutleft, aoutright MVerb ainleft, ainright, Spreset [[, Sparameter, kvalue ],...]
 ```
