@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -263,13 +265,13 @@ Possible properties are:</p>
 <p><strong>NB</strong>: the order in which keys and values are returned represents the corresponding pairs, so keys[i] and values[i] belong to the same pair.</p>
 <p><code>dict_query</code> executes at <strong>k-time</strong>. </p>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">kexists   dict_query idict, &quot;exists&quot;</span>
-<span class="err">ksize     dict_query idict, &quot;size&quot;</span>
-<span class="err">ktype     dict_query idict, &quot;type&quot;</span>
-<span class="err">SKeys[]   dict_query idict, &quot;keys&quot;</span>
-<span class="err">kKeys[]   dict_query idict, &quot;keys&quot;</span>
-<span class="err">kValues[] dict_query idict, &quot;values&quot;</span>
-<span class="err">SValues[] dict_query idict, &quot;values&quot;</span>
+<div class="codehilite"><pre><span></span><code>kexists   dict_query idict, &quot;exists&quot;
+ksize     dict_query idict, &quot;size&quot;
+ktype     dict_query idict, &quot;type&quot;
+SKeys[]   dict_query idict, &quot;keys&quot;
+kKeys[]   dict_query idict, &quot;keys&quot;
+kValues[] dict_query idict, &quot;values&quot;
+SValues[] dict_query idict, &quot;values&quot;
 </code></pre></div>
 
 

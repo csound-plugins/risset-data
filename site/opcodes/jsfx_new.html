@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -262,15 +264,15 @@ defining an udo with <code>setksmps 1</code> but more efficient). It is around 2
 than hand-coded C.</p>
 </div>
 <p>!!! Note jsfx input / output</p>
-<div class="codehilite"><pre><span></span><code><span class="n">A</span><span class="w"> </span><span class="n">jsfx</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">certain</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">audio</span><span class="w"> </span><span class="k">input</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">channels</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">series</span><span class="w"> </span><span class="k">of</span><span class="w"> </span>
-<span class="ss">&quot;sliders&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="k">parameters</span><span class="w"> </span><span class="n">operating</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="n">rate</span><span class="p">.</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">also</span><span class="w"> </span><span class="k">use</span><span class="w"></span>
-<span class="n">these</span><span class="w"> </span><span class="n">sliders</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">send</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="k">values</span><span class="p">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="k">read</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">csound</span><span class="w"> </span><span class="n">via</span><span class="w"> </span><span class="o">[</span><span class="n">jsfx_getslider</span><span class="o">]</span><span class="w"></span>
-<span class="n">See</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">reaper</span><span class="p">.</span><span class="n">fm</span><span class="o">/</span><span class="n">sdk</span><span class="o">/</span><span class="n">js</span><span class="o">/</span><span class="n">js</span><span class="p">.</span><span class="n">php</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="n">information</span><span class="w"> </span><span class="n">about</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">syntax</span><span class="p">,</span><span class="w"> </span><span class="n">etc</span><span class="p">.</span><span class="w"></span>
+<div class="codehilite"><pre><span></span><code>A jsfx script has a certain number of audio input / output channels, and a series of 
+&quot;sliders&quot;, which are parameters operating at control rate. A script can also use
+these sliders to send control values, which can be read in csound via [jsfx_getslider]
+See https://www.reaper.fm/sdk/js/js.php for more information about the syntax, etc.
 </code></pre></div>
 
 
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">ihandle jsfx_new Spath</span>
+<div class="codehilite"><pre><span></span><code>ihandle jsfx_new Spath
 </code></pre></div>
 
 

@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -256,14 +258,14 @@ used by the script. A slider can also be used to output values to the caller, fo
 example to indicate the gain reduction in a compressor plugin, or the frequency
 in a pitch tracking plugin. </p>
 <p>A slider definition in a jsfx script has the form:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">slider7</span><span class="o">:</span><span class="mi">0</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">,</span><span class="mi">20</span><span class="o">,</span><span class="mf">0.01</span><span class="o">&gt;</span><span class="n">Gain</span> <span class="n">Reduction</span>
+<div class="codehilite"><pre><span></span><code>slider7:0&lt;0,20,0.01&gt;Gain Reduction
 </code></pre></div>
 
 
 <p>This defines a control parameter with default value <code>0</code>, between <code>0</code> and <code>20</code>,
 with a precission (an increment) of <code>0.01</code> and a label "Gain Reduction". To read
 the value of that slider:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">kgainreduction = jsfx_getslider(ihandle, 7)</span>
+<div class="codehilite"><pre><span></span><code>kgainreduction = jsfx_getslider(ihandle, 7)
 </code></pre></div>
 
 
@@ -283,7 +285,7 @@ machine code. It allows to operate at the sample level (like defining an udo wit
 See https://www.reaper.fm/sdk/js/js.php for more information about the syntax, etc.</p>
 </div>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">kvalue  jsfx_getslider ihandle, kid</span>
+<div class="codehilite"><pre><span></span><code>kvalue  jsfx_getslider ihandle, kid
 </code></pre></div>
 
 

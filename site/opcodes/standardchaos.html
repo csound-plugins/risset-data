@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -251,14 +253,14 @@
 <h2 id="description">Description</h2>
 <p><code>standardchaos</code> is a chaotic generator, the sound is generated with 
 the following difference equations;</p>
-<div class="codehilite"><pre><span></span><code><span class="n">y</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">[</span><span class="n">n-1</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="o">[</span><span class="n">n-1</span><span class="o">]</span><span class="p">))</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="nf">pi</span><span class="p">;</span><span class="w"></span>
-<span class="n">x</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">[</span><span class="n">n-1</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="nf">pi</span><span class="p">;</span><span class="w"></span>
-<span class="k">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">pi</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">pi</span><span class="w"></span>
+<div class="codehilite"><pre><span></span><code>y[n] = (y[n-1] + k * sin(x[n-1])) % 2pi;
+x[n] = (x[n-1] + y[n]) % 2pi;
+out = (x[n] - pi) / pi
 </code></pre></div>
 
 
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">aout standardchaos krate, kk=1, ix=0.5, iy=0</span>
+<div class="codehilite"><pre><span></span><code>    <span class="kt">a</span><span class="n">out</span> <span class="n">standardchaos</span> <span class="kt">k</span><span class="n">rate</span><span class="p">,</span> <span class="kt">k</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="kt">i</span><span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="kt">i</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
 
 

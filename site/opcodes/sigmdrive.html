@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -258,18 +260,18 @@
 <p><code>sigmdrive</code> simulates analog "soft clipping" by applying non-linear transfer functions. Two
 different sigmoid equations are implemented.</p>
 <h4 id="mode-0">mode 0</h4>
-<div class="codehilite"><pre><span></span><code><span class="err">out = tanh(in * drivefactor)</span>
+<div class="codehilite"><pre><span></span><code>    <span class="n">out</span> <span class="o">=</span> <span class="n">tanh</span><span class="p">(</span><span class="n">in</span> <span class="o">*</span> <span class="n">drivefactor</span><span class="p">)</span>
 </code></pre></div>
 
 
 <h4 id="mode-1">mode 1</h4>
-<div class="codehilite"><pre><span></span><code><span class="err">if in &gt; 0    then   out = 1.0 - pow(1. - in, drivefactor)</span>
-<span class="err">if in &lt;= 0   then   out = pow(1. + x, drivefactor) - 1.0</span>
+<div class="codehilite"><pre><span></span><code>if in &gt; 0    -&gt; out = 1.0 - pow(1. - in, drivefactor)
+if in &lt;= 0   -&gt; out = pow(1. + x, drivefactor) - 1.0
 </code></pre></div>
 
 
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">aout sigmdrive ain, xdrivefactor, kmode=0</span>
+<div class="codehilite"><pre><span></span><code>    <span class="kt">a</span><span class="n">out</span> <span class="n">sigmdrive</span> <span class="kt">a</span><span class="n">in</span><span class="p">,</span> <span class="n">xdrivefactor</span><span class="p">,</span> <span class="kt">k</span><span class="n">mode</span><span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
 
 

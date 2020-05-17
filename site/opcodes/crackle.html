@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -251,13 +253,13 @@
 <h2 id="description">Description</h2>
 <p><code>crackle</code> is a chaotic generator, the sound is generated with 
 the following equation</p>
-<div class="codehilite"><pre><span></span><code><span class="n">y</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="o">[</span><span class="n">n-1</span><span class="o">]-</span><span class="w"> </span><span class="n">y</span><span class="o">[</span><span class="n">n-2</span><span class="o">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.05</span><span class="w"></span>
+<div class="codehilite"><pre><span></span><code>y[n] = p * y[n-1]- y[n-2] - 0.05
 </code></pre></div>
 
 
 <p>Port of supercollider's <a href="http://doc.sccode.org/Classes/Crackle.html">Crackle</a></p>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">aout crackle kp</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">a</span><span class="n">out</span> <span class="n">crackle</span> <span class="kt">k</span><span class="n">p</span>
 </code></pre></div>
 
 

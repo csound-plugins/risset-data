@@ -54,6 +54,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Opcodes</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
@@ -253,14 +255,14 @@
 defined in a jsfx script, mostly prior to calling <code>jsfx_play</code>.
 A jsfx plugin defines a series of up to 64 sliders, which are control parameters
 used by the script. A slider definition in a jsfx script has the form:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">slider3</span><span class="o">:</span><span class="mf">1.5</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mf">0.01</span><span class="o">&gt;</span><span class="n">Compression</span> <span class="n">Ratio</span>
+<div class="codehilite"><pre><span></span><code>slider3:1.5&lt;0,4,0.01&gt;Compression Ratio
 </code></pre></div>
 
 
 <p>This defines a control parameter with default value <code>1.5</code>, between <code>0</code> and <code>4</code>,
 with a precission (an increment) of <code>0.01</code> and a label "Copression Ratio". </p>
-<div class="codehilite"><pre><span></span><code><span class="err">kcomprat = 2.5</span>
-<span class="err">jsfx_setslider ihandle, 3, kcomprat</span>
+<div class="codehilite"><pre><span></span><code>kcomprat = 2.5
+jsfx_setslider ihandle, 3, kcomprat
 </code></pre></div>
 
 
@@ -286,7 +288,7 @@ than hand-coded C.
 See https://www.reaper.fm/sdk/js/js.php for more information about the syntax, etc.</p>
 </div>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="err">jsfx_setslider ihandle, id1, kval1 [, id2, kval2, id3, kval3, ...]</span>
+<div class="codehilite"><pre><span></span><code>jsfx_setslider ihandle, id1, kval1 [, id2, kval2, id3, kval3, ...]
 </code></pre></div>
 
 
