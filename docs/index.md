@@ -10,7 +10,7 @@ Miscellaneous plugins
   * [defer](opcodes/defer.md): Run an opcode at the end of an event
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
-  * [errormsg](opcodes/errormsg.md): Throws an error message at performance
+  * [errormsg](opcodes/errormsg.md): Throws an error message at performance or init
   * [file_exists](opcodes/file_exists.md): Returns 1 if a file exists and can be read
   * [frac2int](opcodes/frac2int.md): Convert the fractional part of a number into an integer
   * [lfnoise](opcodes/lfnoise.md): low frequency, band-limited noise
@@ -22,6 +22,7 @@ Miscellaneous plugins
   * [ref](opcodes/ref.md): Get a reference to a variable
   * [refvalid](opcodes/refvalid.md): Queries if a reference is valid
   * [schmitt](opcodes/schmitt.md): A schmitt trigger (a comparator with hysteresis).
+  * [setslice](opcodes/setslice.md): Set a slice of an array to a given value
   * [sigmdrive](opcodes/sigmdrive.md): Analog "soft clipping" distortion by applying non-linear transfer functions.
   * [standardchaos](opcodes/standardchaos.md): Standard map chaotic generator
   * [uniqinstance](opcodes/uniqinstance.md): Return an fractional instrument number which is not in use
@@ -45,6 +46,7 @@ hashtable / pool / string cache plugins
   * [dict_exists](opcodes/dict_exists.md): Returns 1 if the dict exists, 0 otherwise
   * [dict_free](opcodes/dict_free.md): Free a hashtable
   * [dict_get](opcodes/dict_get.md): Get a value from a hashtable
+  * [dict_geti](opcodes/dict_geti.md): Get a string value from a hashtable at init time
   * [dict_iter](opcodes/dict_iter.md): Iterate over the key-value pairs of a dict
   * [dict_new](opcodes/dict_new.md): Create a hashtable
   * [dict_print](opcodes/dict_print.md): Prints the contents of a dict
