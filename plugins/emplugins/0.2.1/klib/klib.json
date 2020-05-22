@@ -20,7 +20,7 @@
         }
     },
     "opcodes": [
-        "dict_exists", "dict_free", "dict_get", "dict_iter", "dict_new", "dict_print",
+        "dict_exists", "dict_free", "dict_get", "dict_geti", "dict_iter", "dict_new", "dict_print",
         "dict_query", "dict_set", "dict_size", "pool_at", "pool_capacity", "pool_gen",
         "pool_new", "pool_pop", "pool_push", "pool_size",
         "strcache", "strview"
