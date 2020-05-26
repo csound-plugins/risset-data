@@ -11,6 +11,7 @@ Miscellaneous plugins
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
   * [errormsg](opcodes/errormsg.md): Throws an error message at performance or init
+  * [extendarray](opcodes/extendarray.md): Extend one array with the contents of a second array, in place
   * [file_exists](opcodes/file_exists.md): Returns 1 if a file exists and can be read
   * [frac2int](opcodes/frac2int.md): Convert the fractional part of a number into an integer
   * [lfnoise](opcodes/lfnoise.md): low frequency, band-limited noise
