@@ -16,7 +16,7 @@
         },
         "windows": {
             "url": "libelse.dll",
-            "build_platform": "Windows 10"
+            "build_platform": "Windows 7"
         }
     },
     "opcodes": [
@@ -27,6 +27,7 @@
         "defer",
         "deref",
         "diode_ringmod",
+        "extendarray",
         "file_exists",
         "frac2int",
         "lfnoise",
