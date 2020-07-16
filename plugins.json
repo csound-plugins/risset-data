@@ -8,6 +8,6 @@
         "pathtools@0.2.3": "plugins/emplugins/pathtools/0.2.3/manifest.json",
 
         "mverb@1.3.7": "plugins/gogins/1.3.7/mverb/manifest.json",
-        "rory@0.2.2": "plugins/rorywalsh/0.2.2/rory/manifest.json"
+        "rory@0.2.3": "plugins/rorywalsh/rory/0.2.3/manifest.json"
     }
 }

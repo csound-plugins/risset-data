@@ -1,7 +1,7 @@
 {
     "name": "poly",
     "libname": "libpoly",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "short_description": "Run multiple copies of an opcode in parallel/series",
     "long_description": "Run multiple copies of an opcode in parallel/series",
     "csound_version": "6.14",
