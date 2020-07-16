@@ -10,13 +10,14 @@ Miscellaneous plugins
   * [defer](opcodes/defer.md): Run an opcode at the end of an event
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
-  * [errormsg](opcodes/errormsg.md): Throws an error message at performance or init
   * [extendarray](opcodes/extendarray.md): Extend one array with the contents of a second array, in place
   * [file_exists](opcodes/file_exists.md): Returns 1 if a file exists and can be read
   * [frac2int](opcodes/frac2int.md): Convert the fractional part of a number into an integer
+  * [ftsetparams](opcodes/ftsetparams.md): Set metadata parameters of a table, as if it was loaded via GEN1
   * [lfnoise](opcodes/lfnoise.md): low frequency, band-limited noise
   * [linenv](opcodes/linenv.md): A triggerable linear envelope with sustain segment
   * [memview](opcodes/memview.md): Create a view into a table or another array
+  * [perlin3](opcodes/perlin3.md): gradient noise sound generator
   * [pread](opcodes/pread.md): Read pfield values from any active instrument instance
   * [pwrite](opcodes/pwrite.md): Modify pfield values of an active instrument instance
   * [ramptrig](opcodes/ramptrig.md): A triggerable ramp between 0 and 1
@@ -26,6 +27,7 @@ Miscellaneous plugins
   * [setslice](opcodes/setslice.md): Set a slice of an array to a given value
   * [sigmdrive](opcodes/sigmdrive.md): Analog "soft clipping" distortion by applying non-linear transfer functions.
   * [standardchaos](opcodes/standardchaos.md): Standard map chaotic generator
+  * [throwerror](opcodes/throwerror.md): Throws an error message at performance or init
   * [uniqinstance](opcodes/uniqinstance.md): Return an fractional instrument number which is not in use
   * [xtracycles](opcodes/xtracycles.md): Returns the number of extra performance cycles for an event
 

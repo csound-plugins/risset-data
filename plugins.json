@@ -1,12 +1,12 @@
 {
     "version": "0.0.1",
     "plugins": {
-        "else@0.2.2": "plugins/emplugins/0.2.2/else/manifest.json",
-        "poly@0.2.2": "plugins/emplugins/0.2.2/poly/manifest.json",
-        "klib@0.2.2": "plugins/emplugins/0.2.2/klib/manifest.json",
-        "jsfx@0.2.2": "plugins/emplugins/0.2.2/jsfx/manifest.json",
-        "pathtools@0.2.2": "plugins/emplugins/0.2.2/pathtools/manifest.json",
-                
+        "else@0.2.3":      "plugins/emplugins/else/0.2.3/manifest.json",
+        "poly@0.2.3":      "plugins/emplugins/poly/0.2.3/manifest.json",
+        "klib@0.2.3":      "plugins/emplugins/klib/0.2.3/manifest.json",
+        "jsfx@0.2.3":      "plugins/emplugins/jsfx/0.2.3/manifest.json",
+        "pathtools@0.2.3": "plugins/emplugins/pathtools/0.2.3/manifest.json",
+
         "mverb@1.3.7": "plugins/gogins/1.3.7/mverb/manifest.json",
         "rory@0.2.2": "plugins/rorywalsh/0.2.2/rory/manifest.json"
     }

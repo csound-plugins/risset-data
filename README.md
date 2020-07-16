@@ -53,8 +53,8 @@ any name with the .json suffix). The folder structure could be:
 /
   plugins/
     alice/
-      1.0.0/
-        myplugin/
+      myplugin/
+        1.0.0/
           manifest.json
           myplugin.so
           myplugin.dll
