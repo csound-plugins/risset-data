@@ -78,10 +78,6 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/atstop.html">atstop</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="opcodes/channelStateRecall.html">channelStateRecall</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="opcodes/channelStateSave.html">channelStateSave</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/crackle.html">crackle</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/defer.html">defer</a>
@@ -204,10 +200,6 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/throwerror.html">throwerror</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="opcodes/trigExpseg.html">trigExpseg</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="opcodes/trigLinseg.html">trigLinseg</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/tubeharmonics.html">tubeharmonics</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="opcodes/uniqinstance.html">uniqinstance</a>
@@ -254,7 +246,7 @@
 <li><a href="opcodes/accum.html">accum</a>: Simple accumulator of scalar values</li>
 <li><a href="opcodes/atstop.html">atstop</a>: Schedule an instrument at the end of the current instrument</li>
 <li><a href="opcodes/crackle.html">crackle</a>: generates noise based on a chaotic equation</li>
-<li><a href="opcodes/defer.html">defer</a>: Run an opcode at the end of an event</li>
+<li><a href="opcodes/defer.html">defer</a>: Run an opcode at the end of current event</li>
 <li><a href="opcodes/deref.html">deref</a>: Dereference a previously created reference to a variable</li>
 <li><a href="opcodes/diode_ringmod.html">diode_ringmod</a>: A ring modulator with optional non-linearities</li>
 <li><a href="opcodes/extendarray.html">extendarray</a>: Extend one array with the contents of a second array, in place</li>
@@ -279,7 +271,7 @@
 <li><a href="opcodes/xtracycles.html">xtracycles</a>: Returns the number of extra performance cycles for an event</li>
 </ul>
 <h2 id="jsfx">jsfx</h2>
-<p>Jesusonics effects in csound</p>
+<p>jsfx support for csound</p>
 <ul>
 <li><a href="opcodes/jsfx.html">jsfx</a>: Instantiates and runs a jsfx script</li>
 <li><a href="opcodes/jsfx_getslider.html">jsfx_getslider</a>: Gets a slider value of a jsfx instance</li>
@@ -289,7 +281,7 @@
 <li><a href="opcodes/tubeharmonics.html">tubeharmonics</a>: A distortion with control for odd/even harmonics</li>
 </ul>
 <h2 id="klib">klib</h2>
-<p>hashtable / pool / string cache plugins</p>
+<p>A hashtable for csound</p>
 <ul>
 <li><a href="opcodes/dict_exists.html">dict_exists</a>: Returns 1 if the dict exists, 0 otherwise</li>
 <li><a href="opcodes/dict_free.html">dict_free</a>: Free a hashtable</li>
@@ -333,20 +325,15 @@
 <li><a href="opcodes/sysPlatform.html">sysPlatform</a>: Get a string description of the current system platform</li>
 </ul>
 <h2 id="poly">poly</h2>
-<p>Run multiple copies of an opcode in parallel/series</p>
+<p>Multiple (parallel or sequential) instances of an opcode</p>
 <ul>
+<li><a href="opcodes/defer.html">defer</a>: Run an opcode at the end of current event</li>
 <li><a href="opcodes/poly.html">poly</a>: <code>poly</code> creates and controls multiple parallel version of an opcode</li>
 <li><a href="opcodes/poly0.html">poly0</a>: <code>poly0</code> creates and controls multiple parallel version of an opcode with no outputs</li>
 <li><a href="opcodes/polyseq.html">polyseq</a>: <code>polyseq</code> creates and controls multiple <strong>sequential</strong> version of an opcode</li>
 </ul>
 <h2 id="rory">rory</h2>
-<p>Opcodes to save/recall channels, triggers, etc</p>
-<ul>
-<li><a href="opcodes/channelStateRecall.html">channelStateRecall</a>: Recalls channel data saved to a file via <code>channelStateSave</code></li>
-<li><a href="opcodes/channelStateSave.html">channelStateSave</a>: Saves all channel data to file</li>
-<li><a href="opcodes/trigExpseg.html">trigExpseg</a>: Trace a series of exponential segments between specified points.</li>
-<li><a href="opcodes/trigLinseg.html">trigLinseg</a>: Trace a series of line segments between specified points.</li>
-</ul>
+<p>Plugins by Rory Walsh</p>
               
             </div>
           </div>

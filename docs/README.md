@@ -7,7 +7,7 @@ Miscellaneous plugins
   * [accum](opcodes/accum.md): Simple accumulator of scalar values
   * [atstop](opcodes/atstop.md): Schedule an instrument at the end of the current instrument
   * [crackle](opcodes/crackle.md): generates noise based on a chaotic equation
-  * [defer](opcodes/defer.md): Run an opcode at the end of an event
+  * [defer](opcodes/defer.md): Run an opcode at the end of current event
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
   * [extendarray](opcodes/extendarray.md): Extend one array with the contents of a second array, in place
@@ -33,7 +33,7 @@ Miscellaneous plugins
 
 ## jsfx
 
-Jesusonics effects in csound
+jsfx support for csound
 
   * [jsfx](opcodes/jsfx.md): Instantiates and runs a jsfx script
   * [jsfx_getslider](opcodes/jsfx_getslider.md): Gets a slider value of a jsfx instance
@@ -44,7 +44,7 @@ Jesusonics effects in csound
 
 ## klib
 
-hashtable / pool / string cache plugins
+A hashtable for csound
 
   * [dict_exists](opcodes/dict_exists.md): Returns 1 if the dict exists, 0 otherwise
   * [dict_free](opcodes/dict_free.md): Free a hashtable
@@ -91,17 +91,14 @@ Cross-platform path handling
 
 ## poly
 
-Run multiple copies of an opcode in parallel/series
+Multiple (parallel or sequential) instances of an opcode
 
+  * [defer](opcodes/defer.md): Run an opcode at the end of current event
   * [poly](opcodes/poly.md): `poly` creates and controls multiple parallel version of an opcode
   * [poly0](opcodes/poly0.md): `poly0` creates and controls multiple parallel version of an opcode with no outputs
   * [polyseq](opcodes/polyseq.md): `polyseq` creates and controls multiple **sequential** version of an opcode
 
 ## rory
 
-Opcodes to save/recall channels, triggers, etc
+Plugins by Rory Walsh
 
-  * [channelStateRecall](opcodes/channelStateRecall.md): Recalls channel data saved to a file via `channelStateSave`
-  * [channelStateSave](opcodes/channelStateSave.md): Saves all channel data to file
-  * [trigExpseg](opcodes/trigExpseg.md): Trace a series of exponential segments between specified points.
-  * [trigLinseg](opcodes/trigLinseg.md): Trace a series of line segments between specified points.
