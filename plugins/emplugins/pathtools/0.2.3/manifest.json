@@ -22,7 +22,7 @@
   "author": "Eduardo Moguillansky",
   "email": "eduardo.moguillansky@gmail.com",
   "license": "LGPL",
-  "repository": "https://github.com/csound-plugins/csound-plugins/tree/master/src/pathtools",
+  "repository": "",
   "binaries": {
     "linux": {
       "url": "libpathtools.so",

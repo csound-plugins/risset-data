@@ -16,7 +16,7 @@
   "author": "Eduardo Moguillansky",
   "email": "eduardo.moguillansky@gmail.com",
   "license": "LGPL",
-  "repository": "https://github.com/csound-plugins/csound-plugins/tree/master/src/jsfx",
+  "repository": "https://github.com/csound-plugins/csound-plugins",
   "binaries": {
     "linux": {
       "url": "libjsfx.so",
