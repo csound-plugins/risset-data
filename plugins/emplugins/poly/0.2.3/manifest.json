@@ -14,7 +14,7 @@
   "author": "Eduardo Moguillansky",
   "email": "eduardo.moguillansky@gmail.com",
   "license": "LGPL",
-  "repository": "",
+  "repository": "https://github.com/csound-plugins/csound-plugins/tree/master/src/poly",
   "binaries": {
     "linux": {
       "url": "libpoly.so",

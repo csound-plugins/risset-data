@@ -36,7 +36,7 @@
   "author": "Eduardo Moguillansky",
   "email": "eduardo.moguillansky@gmail.com",
   "license": "LGPL",
-  "repository": "",
+  "repository": "https://github.com/csound-plugins/csound-plugins/tree/master/src/else",
   "binaries": {
     "linux": {
       "url": "libelse.so",
