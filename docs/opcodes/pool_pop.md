@@ -16,13 +16,13 @@ using it the value is returned to the pool with `pool_push`.
 
 ## Syntax
 
-    ivalue pool_pop ipool
-    kvalue pool_pop ipool
+    ivalue pool_pop ipool [, iifempty=-1]
+    kvalue pool_pop ipool [, kifempty=-1]
 
 ### Arguments
 
 * `ipool`: the pool to push the value to
-
+* `iifempty` / `kifempty`: this value is returned if the pool is empty. 
 
 ### Output
 
@@ -35,7 +35,8 @@ using it the value is returned to the pool with `pool_push`.
 
 ## Examples
 
-```csound 
+```csound
+
 
 <CsoundSynthesizer>
 <CsOptions>
@@ -156,6 +157,7 @@ schedule "example1", 0, -1
 </CsScore>
 
 </CsoundSynthesizer>
+
 
 ```
 
