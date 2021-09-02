@@ -48,6 +48,7 @@ def parse_index(indexfile: Path) -> Dict[str, Manifest]:
     try:
         d = json.load(open(indexfile.as_posix()))
     except json.JSONDecodeError as e:
+        print(f"Couln not parse indexfile: {indexfile}")
         errormsg(str(e))
         raise IndexParseError()
 
@@ -280,7 +281,7 @@ def generate_index(manifests:List[Manifest], manpages: Dict[str, Path],
 def build_mkdocs():
     mkdocs = shutil.which("mkdocs")
     if not mkdocs:
-        errormsg("Asked to build html documentation, but mkdocs was not found")
+        errormsg("Asked to build html documentation, but mkdocs was not found in the path")
         return
     subprocess.call([mkdocs, "build"])
 

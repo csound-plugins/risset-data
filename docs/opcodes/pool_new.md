@@ -17,10 +17,11 @@ the given size is allocated and the size can't be modified. If no size is given,
 a pool of variable size is created.
 
 
-!!! Note
+!!! Note "Variable size / fixed size"
 
     A variable size pool produces allocations during performance, which might be
-    a  problem in certain situations / architectures.
+    a problem in certain situations / architectures or when running in `--realtime`
+    mode. 
 
 
 ## Syntax
@@ -59,7 +60,7 @@ ksmps  = 64
 nchnls = 2
 0dbfs  = 1
 
-; create a global pool of fixed capacity
+; create an empty global pool of fixed capacity. 
 gipool pool_new 100
 
 instr 1

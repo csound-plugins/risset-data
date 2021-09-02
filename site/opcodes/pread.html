@@ -56,11 +56,13 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="atstop.html">atstop</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="beadsynt.html">beadsynt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="beosc.html">beosc</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="bisect.html">bisect</a>
                     </li>
@@ -69,6 +71,12 @@
                     <li class="toctree-l1"><a class="reference internal" href="defer.html">defer</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="deref.html">deref</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="detectsilence.html">detectsilence</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_del.html">dict_del</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_dump.html">dict_dump</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_exists.html">dict_exists</a>
                     </li>
@@ -79,6 +87,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="dict_geti.html">dict_geti</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_iter.html">dict_iter</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_loadstr.html">dict_loadstr</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_new.html">dict_new</a>
                     </li>
@@ -94,9 +104,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="extendarray.html">extendarray</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="file_exists.html">file_exists</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="fileexists.html">file_exists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="filereadmeta.html">filereadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="findFileInPath.html">findFileInPath</a>
                     </li>
@@ -113,6 +123,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="ftsetparams.html">ftsetparams</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="getEnvVar.html">getEnvVar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="getrowlin.html">getrowlin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="initerror.html">initerror</a>
                     </li>
@@ -132,7 +144,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="linenv.html">linenv</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadmtx.html">loadmtx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadnpy.html">loadnpy</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="memview.html">memview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="panstereo.html">panstereo</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pathAbsolute.html">pathAbsolute</a>
                     </li>
@@ -218,19 +236,23 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="setslice.html">setslice</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sflistprograms.html">sflistprograms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sfreadmeta.html">sfreadmeta</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="sigmdrive.html">sigmdrive</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="sref.html">sref</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="standardchaos.html">standardchaos</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="strcache.html">strcache</a>
+                    <li class="toctree-l1"><a class="reference internal" href="strjoin.html">strjoin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="strsplit.html">strsplit</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="strview.html">strview</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="sysPlatform.html">sysPlatform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tabrowlin.html">tabrowlin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="throwerror.html">throwerror</a>
                     </li>
@@ -300,21 +322,24 @@ the output value is set to <code>inotfound</code>. </p>
   the moment the instance stops and no new instance is searched. </li>
 </ul>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">output</span><span class="p">:</span><span class="n">i</span><span class="o">|</span><span class="nb">k</span> <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">:</span><span class="n">i</span><span class="p">,</span> <span class="kt">i</span><span class="n">ndex</span><span class="p">:</span><span class="n">i</span><span class="o">|</span><span class="nb">k</span> <span class="p">[,</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span><span class="p">]</span> 
-</code></pre></div>
+<div class="codehilite"><pre><span></span><code><span class="kt">i</span><span class="n">value</span>    <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">,</span> <span class="kt">i</span><span class="n">index</span><span class="p">,</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span>
+<span class="kt">k</span><span class="n">value</span>    <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">,</span> <span class="kt">i</span><span class="n">index</span><span class="p">,</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span>
+<span class="kt">k</span><span class="n">value</span>    <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">,</span> <span class="kt">k</span><span class="n">index</span><span class="p">,</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span>
 
+<span class="kt">i</span><span class="n">values</span><span class="p">[]</span> <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">,</span> <span class="kt">i</span><span class="n">indexes</span><span class="p">[],</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span>
+<span class="kt">k</span><span class="n">values</span><span class="p">[]</span> <span class="n">pread</span> <span class="kt">i</span><span class="n">nstrnum</span><span class="p">,</span> <span class="kt">i</span><span class="n">indexes</span><span class="p">[],</span> <span class="kt">i</span><span class="n">notfound</span><span class="o">=-</span><span class="mi">1</span>
+</code></pre></div>
 
 <h3 id="arguments">Arguments</h3>
 <ul>
 <li><code>instrnum</code> (i):  the (fractional) instrument number to modify</li>
-<li><code>index</code> (i or k): the index of the pfield to read. If kindex is 4, then p4 will be 
-  modified</li>
+<li><code>iindex</code> / <code>kindex</code>: the index of the pfield to read. </li>
 <li><code>inotfound</code>: the value to return if instrnum is not found. To avoid misinterpretation,
   this value should be different than any expected value of the pfield</li>
 </ul>
 <h3 id="output">Output</h3>
 <ul>
-<li><code>output</code> (i or k): the current value of the given pfield. Will be <code>inotfound</code> if
+<li><code>ivalue</code> / <code>kvalue</code>: the current value of the given pfield. Will be <code>inotfound</code> if
   no matching instance has been found.</li>
 </ul>
 <h3 id="execution-time">Execution Time</h3>
@@ -349,25 +374,37 @@ the output value is set to <code>inotfound</code>. </p>
 <span class="cm">*/</span>
 
 <span class="kd">instr</span> <span class="nf">1</span>
-  <span class="nb">print</span> <span class="vi">p4</span>
+  <span class="nb">prints</span> <span class="s">&quot;instr 1. p4=</span><span class="si">%f</span><span class="s">, p5=</span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="vi">p4</span><span class="p">,</span> <span class="vi">p5</span>
 <span class="kd">endin</span>
 
 <span class="kd">instr</span> <span class="nf">2</span>
-  <span class="kt">i</span><span class="n">p4</span> <span class="n">pread</span> <span class="mf">1.01</span><span class="p">,</span> <span class="mi">4</span>
-  <span class="nb">printf</span> <span class="s">&quot;&lt;&lt;&lt;&lt; instr 1.01 p4=</span><span class="si">%f</span><span class="s"> &gt;&gt;&gt;&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kt">i</span><span class="n">p4</span>
+  <span class="kt">i</span><span class="n">p1</span> <span class="o">=</span> <span class="vi">p4</span>
+  <span class="kt">i</span><span class="n">p4</span> <span class="n">pread</span> <span class="kt">i</span><span class="n">p1</span><span class="p">,</span> <span class="mi">4</span>
+  <span class="nb">prints</span> <span class="s">&quot;Inside instr 2. Instance p1=</span><span class="si">%f</span><span class="s">, p4=</span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">i</span><span class="n">p1</span><span class="p">,</span> <span class="kt">i</span><span class="n">p4</span>
+  <span class="n">pwrite</span> <span class="kt">i</span><span class="n">p1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="kt">i</span><span class="n">p4</span><span class="o">*</span><span class="mi">2</span>
   <span class="nb">turnoff</span>
+<span class="kd">endin</span>
+
+
+<span class="kd">instr</span> <span class="nf">4</span>
+  <span class="kt">i</span><span class="n">p1</span> <span class="o">=</span> <span class="vi">p4</span>
+  <span class="kt">i</span><span class="n">index</span><span class="p">[]</span> <span class="nb">fillarray</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
+  <span class="kt">i</span><span class="n">vals</span><span class="p">[]</span> <span class="n">pread</span> <span class="kt">i</span><span class="n">p1</span><span class="p">,</span> <span class="kt">i</span><span class="n">index</span>
+  <span class="nb">prints</span> <span class="s">&quot;Inside instr 4, reading p4 and p5 as array&quot;</span>
+  <span class="nb">printarray</span> <span class="kt">i</span><span class="n">vals</span>
+  <span class="nb">turnoff</span> 
 <span class="kd">endin</span>
 
 <span class="o">&lt;/</span><span class="n">CsInstruments</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">CsScore</span><span class="o">&gt;</span>
-<span class="nb">i</span> <span class="mf">1.01</span> <span class="mi">0</span> <span class="mi">2</span>   <span class="mi">95</span>
-<span class="nb">i</span> <span class="mi">2</span>    <span class="mi">1</span> <span class="mf">0.1</span>
+<span class="nb">i</span> <span class="mf">1.01</span> <span class="mi">0</span>   <span class="mi">2</span> <span class="mi">44</span>   <span class="mi">45</span>
+<span class="nb">i</span> <span class="mi">2</span>    <span class="mi">1</span>   <span class="mi">0</span> <span class="mf">1.01</span>
+<span class="nb">i</span> <span class="mi">4</span>    <span class="mf">1.5</span> <span class="mi">0</span> <span class="mf">1.01</span>
 
 <span class="o">&lt;/</span><span class="n">CsScore</span><span class="o">&gt;</span>
 <span class="o">&lt;/</span><span class="n">CsoundSynthesizer</span><span class="o">&gt;</span>
 </code></pre></div>
-
 
 <h2 id="see-also">See also</h2>
 <ul>

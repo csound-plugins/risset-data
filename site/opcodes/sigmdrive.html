@@ -56,11 +56,13 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="atstop.html">atstop</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="beadsynt.html">beadsynt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="beosc.html">beosc</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="bisect.html">bisect</a>
                     </li>
@@ -69,6 +71,12 @@
                     <li class="toctree-l1"><a class="reference internal" href="defer.html">defer</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="deref.html">deref</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="detectsilence.html">detectsilence</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_del.html">dict_del</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_dump.html">dict_dump</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_exists.html">dict_exists</a>
                     </li>
@@ -79,6 +87,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="dict_geti.html">dict_geti</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_iter.html">dict_iter</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_loadstr.html">dict_loadstr</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_new.html">dict_new</a>
                     </li>
@@ -94,9 +104,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="extendarray.html">extendarray</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="file_exists.html">file_exists</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="fileexists.html">file_exists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="filereadmeta.html">filereadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="findFileInPath.html">findFileInPath</a>
                     </li>
@@ -113,6 +123,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="ftsetparams.html">ftsetparams</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="getEnvVar.html">getEnvVar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="getrowlin.html">getrowlin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="initerror.html">initerror</a>
                     </li>
@@ -132,7 +144,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="linenv.html">linenv</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadmtx.html">loadmtx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadnpy.html">loadnpy</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="memview.html">memview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="panstereo.html">panstereo</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pathAbsolute.html">pathAbsolute</a>
                     </li>
@@ -192,6 +210,10 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="setslice.html">setslice</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sflistprograms.html">sflistprograms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sfreadmeta.html">sfreadmeta</a>
+                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="sigmdrive.html">sigmdrive</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a>
@@ -226,13 +248,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="standardchaos.html">standardchaos</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="strcache.html">strcache</a>
+                    <li class="toctree-l1"><a class="reference internal" href="strjoin.html">strjoin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="strsplit.html">strsplit</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="strview.html">strview</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="sysPlatform.html">sysPlatform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tabrowlin.html">tabrowlin</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="throwerror.html">throwerror</a>
                     </li>
@@ -291,17 +313,14 @@ different sigmoid equations are implemented.</p>
 <div class="codehilite"><pre><span></span><code>    <span class="n">out</span> <span class="o">=</span> <span class="n">tanh</span><span class="p">(</span><span class="n">in</span> <span class="o">*</span> <span class="n">drivefactor</span><span class="p">)</span>
 </code></pre></div>
 
-
 <h4 id="mode-1">mode 1</h4>
 <div class="codehilite"><pre><span></span><code>if in &gt; 0    -&gt; out = 1.0 - pow(1. - in, drivefactor)
 if in &lt;= 0   -&gt; out = pow(1. + x, drivefactor) - 1.0
 </code></pre></div>
 
-
 <h2 id="syntax">Syntax</h2>
 <div class="codehilite"><pre><span></span><code>    <span class="kt">a</span><span class="n">out</span> <span class="n">sigmdrive</span> <span class="kt">a</span><span class="n">in</span><span class="p">,</span> <span class="n">xdrivefactor</span><span class="p">,</span> <span class="kt">k</span><span class="n">mode</span><span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 
 <h3 id="arguments">Arguments</h3>
 <ul>
@@ -366,7 +385,6 @@ if in &lt;= 0   -&gt; out = pow(1. + x, drivefactor) - 1.0
 <span class="o">&lt;/</span><span class="n">CsoundSynthesizer</span><span class="o">&gt;</span>
 </code></pre></div>
 
-
 <h2 id="see-also">See also</h2>
 <ul>
 <li><a href="tubeharmonics.html">tubeharmonics</a></li>
@@ -387,7 +405,7 @@ if in &lt;= 0   -&gt; out = pow(1. + x, drivefactor) - 1.0
         <a href="sref.html" class="btn btn-neutral float-right" title="sref">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="setslice.html" class="btn btn-neutral" title="setslice"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="sfreadmeta.html" class="btn btn-neutral" title="sfreadmeta"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -413,7 +431,7 @@ if in &lt;= 0   -&gt; out = pow(1. + x, drivefactor) - 1.0
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="setslice.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="sfreadmeta.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="sref.html" style="color: #fcfcfc">Next &raquo;</a></span>

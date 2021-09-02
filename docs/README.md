@@ -1,5 +1,14 @@
 # Csound Plugins
 
+## beosc
+
+Band-enhanced oscillators implementing the sine+noise synthesis model
+
+  * [beadsynt](opcodes/beadsynt.md): Band-Enhanced Oscillator-Bank
+  * [beosc](opcodes/beosc.md): Band-Enhanced Oscillator
+  * [getrowlin](opcodes/getrowlin.md): opy a row from a 2D array or table, with interpolation between rows
+  * [tabrowlin](opcodes/tabrowlin.md): Copy a row from an f-table to another, interpolating between rows
+
 ## else
 
 Miscellaneous plugins
@@ -8,8 +17,8 @@ Miscellaneous plugins
   * [atstop](opcodes/atstop.md): Schedule an instrument at the end of the current instrument
   * [bisect](opcodes/bisect.md): Returns the fractional index of a value within a sorted array / tab
   * [crackle](opcodes/crackle.md): generates noise based on a chaotic equation
-  * [defer](opcodes/defer.md): Run an opcode at the end of current event
   * [deref](opcodes/deref.md): Dereference a previously created reference to a variable
+  * [detectsilence](opcodes/detectsilence.md): Detect when input falls below an amplitude threshold
   * [diode_ringmod](opcodes/diode_ringmod.md): A ring modulator with optional non-linearities
   * [extendarray](opcodes/extendarray.md): Extend one array with the contents of a second array, in place
   * [fileexists](opcodes/fileexists.md): Returns 1 if a file exists and can be read
@@ -23,7 +32,9 @@ Miscellaneous plugins
   * [interp1d](opcodes/interp1d.md): Interpolate between elements of an array/table
   * [lfnoise](opcodes/lfnoise.md): low frequency, band-limited noise
   * [linenv](opcodes/linenv.md): A triggerable linear envelope with sustain segment
+  * [loadnpy](opcodes/loadnpy.md): Load an array (of any number of dimensions) saved as a .npy file
   * [memview](opcodes/memview.md): Create a view into a table or another array
+  * [panstereo](opcodes/panstereo.md): Stereo signal balancer
   * [perlin3](opcodes/perlin3.md): gradient noise sound generator
   * [pread](opcodes/pread.md): Read pfield values from any active instrument instance
   * [pwrite](opcodes/pwrite.md): Modify pfield values of an active instrument instance
@@ -53,15 +64,18 @@ jsfx support for csound
 
 A hashtable for csound
 
+  * [dict_del](opcodes/dict_del.md): Remove a key:value pair from a hashtable
+  * [dict_dump](opcodes/dict_dump.md): Dumps the contents of this dict as a string
   * [dict_exists](opcodes/dict_exists.md): Returns 1 if the dict exists, 0 otherwise
   * [dict_free](opcodes/dict_free.md): Free a hashtable
   * [dict_get](opcodes/dict_get.md): Get a value from a hashtable
   * [dict_geti](opcodes/dict_geti.md): Get a string value from a hashtable at init time
   * [dict_iter](opcodes/dict_iter.md): Iterate over the key-value pairs of a dict
+  * [dict_loadstr](opcodes/dict_loadstr.md): Creates and fills a new dict from a string definition
   * [dict_new](opcodes/dict_new.md): Create a hashtable
   * [dict_print](opcodes/dict_print.md): Prints the contents of a dict
   * [dict_query](opcodes/dict_query.md): Query different properties of a dict
-  * [dict_set](opcodes/dict_set.md): Set (or remove) a value from a hashtable
+  * [dict_set](opcodes/dict_set.md): Set a value from a hashtable
   * [dict_size](opcodes/dict_size.md): Returns the number of key:value pairs in a dict
   * [pool_at](opcodes/pool_at.md): Returns the item of a pool at a given index
   * [pool_capacity](opcodes/pool_capacity.md): Returns the capacity of a pool
@@ -74,16 +88,11 @@ A hashtable for csound
   * [sderef](opcodes/sderef.md): Retrieves a read-only string from the cache
   * [sref](opcodes/sref.md): Insert a string into a global registry and return a reference to it
 
-## mverb
-
-Artificial reverb based on a 2D waveguide mesh
-
-  * [MVerb](opcodes/MVerb.md): MVerb - Implements Jon Christopher Nelson's waveguide mesh reverb.
-
 ## pathtools
 
 Cross-platform path handling
 
+  * [filereadmeta](opcodes/filereadmeta.md): Read metadata from a soundfile
   * [findFileInPath](opcodes/findFileInPath.md): Find a file inside the search paths of the csound environment
   * [getEnvVar](opcodes/getEnvVar.md): Get the value of an environment variable
   * [pathAbsolute](opcodes/pathAbsolute.md): Returns the absolute path of a file
@@ -95,6 +104,7 @@ Cross-platform path handling
   * [pathSplitExtk](opcodes/pathSplitExtk.md): Split a path into prefix and extension at performance time
   * [pathSplitk](opcodes/pathSplitk.md): Split a path into directory and basename at perf-time
   * [scriptDir](opcodes/scriptDir.md): Get the directory of the loaded orc/csd file
+  * [strjoin](opcodes/strjoin.md): Concatenate any number of strings
   * [strsplit](opcodes/strsplit.md): Split a string at a given separator
   * [sysPlatform](opcodes/sysPlatform.md): Get a string description of the current system platform
 
@@ -106,8 +116,3 @@ Multiple (parallel or sequential) instances of an opcode
   * [poly](opcodes/poly.md): `poly` creates and controls multiple parallel version of an opcode
   * [poly0](opcodes/poly0.md): `poly0` creates and controls multiple parallel version of an opcode with no outputs
   * [polyseq](opcodes/polyseq.md): `polyseq` creates and controls multiple **sequential** version of an opcode
-
-## rory
-
-Plugins by Rory Walsh
-

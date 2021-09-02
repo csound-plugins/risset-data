@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Set (or remove) a value from a hashtable
+Set a value from a hashtable
 
 ## Description
 
@@ -11,22 +11,15 @@ implement a hashtable mapping either strings or integers to strings or floats.
 `dict_set` sets the value corresponding to a key if the key is already present,
 or inserts a key:value pair otherwise.
 
-**NB**: Without a value, `dict_set` deletes the key:value pair from the dict.
-
-`dict_set` executes can execute at **i-time** and **k-time**.
+**NB**: To remove a key-value pair use `dict_del`
 
 !!! Tip
 
     It is possible to set multiple values at i-time directly with [dict_new](dict_new.md)
 
-!!! Note
-
-    If `xvalue` is not given, `dict_set` removes the key from the dict
-
 ## Syntax
 
     dict_set idict, xkey, xvalue
-    dict_set idict, xkey
 
 ## Arguments
 
@@ -60,7 +53,8 @@ nchnls = 2
 instr 1
   ; create a local dict, mapping strings to numbers
   idict dict_new "sf"
-
+  dict_free idict
+  
   ; set key a key:value pair
   dict_set idict, "bar", 123
 
@@ -73,15 +67,11 @@ instr 1
   printf ">>>> bar: %f,  foo: %f \n", 1, kbar, kfoo
 
   ; now create another dict, this one will outlive this note
-  idict2 dict_new "*str:str", "baz", "bazvalue", "foo", "foovalue"
+  idict2 dict_new "str:str", "baz", "bazvalue", "foo", "foovalue"
 
-  ; Remove a key
-  dict_set idict2, "foo"
   ; schedule another inst, pass this dict
   event "i", 2, 0, 1, idict2
-
   turnoff
-
 endin
 
 instr 2
@@ -121,7 +111,7 @@ ksmps  = 64
 nchnls = 2
 0dbfs  = 1
 
-gidict dict_new "*sf"
+gidict dict_new "sf"
 
 opcode argset, 0, iSk
   ip1, Sparam, kvalue xin
@@ -262,9 +252,11 @@ e 10
 
 * [dict_new](dict_new.md)
 * [dict_get](dict_get.md)
+* [dict_del](dict_del.md)
 * [defer](defer.md)
 * [dict_free](dict_free.md)
 
 ## Credits
 
 Eduardo Moguillansky, 2019
+Last update: 2021
