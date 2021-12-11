@@ -14,14 +14,13 @@
 
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="/css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   <link href="/css/syntax-highlighting.css" rel="stylesheet" />
   
   <script src="/js/jquery-2.1.1.min.js" defer></script>
   <script src="/js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -32,10 +31,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="/." class="icon icon-home"> Csound Plugins</a>
+        <a href="/index.html" class="icon icon-home"> Csound Plugins</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="//search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -49,21 +48,27 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/index.html">Index</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/MVerb.html">MVerb</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/accum.html">accum</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/atstop.html">atstop</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/channelStateRecall.html">channelStateRecall</a>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/beadsynt.html">beadsynt</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/channelStateSave.html">channelStateSave</a>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/beosc.html">beosc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/bisect.html">bisect</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/crackle.html">crackle</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/defer.html">defer</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/deref.html">deref</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/detectsilence.html">detectsilence</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_del.html">dict_del</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_dump.html">dict_dump</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_exists.html">dict_exists</a>
                     </li>
@@ -74,6 +79,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_geti.html">dict_geti</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_iter.html">dict_iter</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_loadstr.html">dict_loadstr</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/dict_new.html">dict_new</a>
                     </li>
@@ -87,17 +94,33 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/diode_ringmod.html">diode_ringmod</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/errormsg.html">throwerror</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/extendarray.html">extendarray</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/file_exists.html">file_exists</a>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/fileexists.html">file_exists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/filereadmeta.html">filereadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/findFileInPath.html">findFileInPath</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/findarray.html">findarray</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/frac2int.html">frac2int</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/ftfill.html">ftfill</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/ftfind.html">ftfind</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/ftnew.html">ftnew</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/ftsetparams.html">ftsetparams</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/getEnvVar.html">getEnvVar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/getrowlin.html">getrowlin</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/initerror.html">initerror</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/interp1d.html">interp1d</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/jsfx.html">jsfx</a>
                     </li>
@@ -113,7 +136,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/linenv.html">linenv</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/loadmtx.html">loadmtx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/loadnpy.html">loadnpy</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/memview.html">memview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/panstereo.html">panstereo</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/pathAbsolute.html">pathAbsolute</a>
                     </li>
@@ -131,6 +160,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/pathSplitk.html">pathSplitk</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/perlin3.html">perlin3</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/poly.html">poly</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/poly0.html">poly0</a>
@@ -142,6 +173,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/pool_capacity.html">pool_capacity</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/pool_gen.html">pool_gen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/pool_isfull.html">pool_isfull</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/pool_new.html">pool_new</a>
                     </li>
@@ -165,29 +198,37 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/scriptDir.html">scriptDir</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/sderef.html">sderef</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/setslice.html">setslice</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/sflistprograms.html">sflistprograms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/sfreadmeta.html">sfreadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/sigmdrive.html">sigmdrive</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/sref.html">sref</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/standardchaos.html">standardchaos</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/strcache.html">strcache</a>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/strjoin.html">strjoin</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/strview.html">strview</a>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/strsplit.html">strsplit</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/sysPlatform.html">sysPlatform</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/tabrowlin.html">tabrowlin</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/throwerror.html">throwerror</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/trigExpseg.html">trigExpseg</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/trigLinseg.html">trigLinseg</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/tubeharmonics.html">tubeharmonics</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/uniqinstance.html">uniqinstance</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="/opcodes/xtracycles.html">xtracycles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="/opcodes/zeroarray.html">zeroarray</a>
                     </li>
                 </ul>
       </div>
@@ -199,7 +240,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="/.">Csound Plugins</a>
+        <a href="/index.html">Csound Plugins</a>
       </nav>
 
       
@@ -207,7 +248,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="/.">Docs</a> &raquo;</li>
+    <li><a href="/index.html">Docs</a> &raquo;</li>
     
     
     <li class="wy-breadcrumbs-aside">
@@ -217,6 +258,7 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
@@ -249,13 +291,14 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
 </div>
     <script>var base_url = '/';</script>
+    <script src="/js/theme_extra.js" defer></script>
     <script src="/js/theme.js" defer></script>
       <script src="/search/main.js" defer></script>
     <script defer>

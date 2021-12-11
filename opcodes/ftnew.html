@@ -9,26 +9,25 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>strview - Csound Plugins</title>
+  <title>ftnew - Csound Plugins</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   <link href="../css/syntax-highlighting.css" rel="stylesheet" />
   
   <script>
     // Current page data
-    var mkdocs_page_name = "strview";
-    var mkdocs_page_input_path = "opcodes/strview.md";
+    var mkdocs_page_name = "ftnew";
+    var mkdocs_page_input_path = "opcodes/ftnew.md";
     var mkdocs_page_url = null;
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -39,10 +38,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Csound Plugins</a>
+        <a href="../index.html" class="icon icon-home"> Csound Plugins</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -56,21 +55,27 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="index.html">Index</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="MVerb.html">MVerb</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="accum.html">accum</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="atstop.html">atstop</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="channelStateRecall.html">channelStateRecall</a>
+                    <li class="toctree-l1"><a class="reference internal" href="beadsynt.html">beadsynt</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="channelStateSave.html">channelStateSave</a>
+                    <li class="toctree-l1"><a class="reference internal" href="beosc.html">beosc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="bisect.html">bisect</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="crackle.html">crackle</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="defer.html">defer</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="deref.html">deref</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="detectsilence.html">detectsilence</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_del.html">dict_del</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_dump.html">dict_dump</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_exists.html">dict_exists</a>
                     </li>
@@ -81,6 +86,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="dict_geti.html">dict_geti</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_iter.html">dict_iter</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="dict_loadstr.html">dict_loadstr</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="dict_new.html">dict_new</a>
                     </li>
@@ -94,17 +101,53 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="diode_ringmod.html">diode_ringmod</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="errormsg.html">throwerror</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="extendarray.html">extendarray</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="file_exists.html">file_exists</a>
+                    <li class="toctree-l1"><a class="reference internal" href="fileexists.html">file_exists</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="filereadmeta.html">filereadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="findFileInPath.html">findFileInPath</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="findarray.html">findarray</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="frac2int.html">frac2int</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="ftfill.html">ftfill</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="ftfind.html">ftfind</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="ftnew.html">ftnew</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#syntax">Syntax</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arguments">Arguments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#output">Output</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#execution-time">Execution Time</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#see-also">See also</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#credits">Credits</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="ftsetparams.html">ftsetparams</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="getEnvVar.html">getEnvVar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="getrowlin.html">getrowlin</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="initerror.html">initerror</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="interp1d.html">interp1d</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="jsfx.html">jsfx</a>
                     </li>
@@ -120,7 +163,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="linenv.html">linenv</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadmtx.html">loadmtx</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="loadnpy.html">loadnpy</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="memview.html">memview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="panstereo.html">panstereo</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pathAbsolute.html">pathAbsolute</a>
                     </li>
@@ -138,6 +187,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pathSplitk.html">pathSplitk</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="perlin3.html">perlin3</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="poly.html">poly</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="poly0.html">poly0</a>
@@ -149,6 +200,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="pool_capacity.html">pool_capacity</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pool_gen.html">pool_gen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="pool_isfull.html">pool_isfull</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="pool_new.html">pool_new</a>
                     </li>
@@ -172,47 +225,37 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="scriptDir.html">scriptDir</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sderef.html">sderef</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="setslice.html">setslice</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sflistprograms.html">sflistprograms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sfreadmeta.html">sfreadmeta</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="sigmdrive.html">sigmdrive</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="sref.html">sref</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="standardchaos.html">standardchaos</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="strcache.html">strcache</a>
+                    <li class="toctree-l1"><a class="reference internal" href="strjoin.html">strjoin</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="strview.html">strview</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#syntax">Syntax</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#arguments">Arguments</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#execution-time">Execution Time</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#credits">Credits</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="strsplit.html">strsplit</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="sysPlatform.html">sysPlatform</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="tabrowlin.html">tabrowlin</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="throwerror.html">throwerror</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="trigExpseg.html">trigExpseg</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="trigLinseg.html">trigLinseg</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="tubeharmonics.html">tubeharmonics</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="uniqinstance.html">uniqinstance</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="xtracycles.html">xtracycles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="zeroarray.html">zeroarray</a>
                     </li>
                 </ul>
       </div>
@@ -224,7 +267,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Csound Plugins</a>
+        <a href="../index.html">Csound Plugins</a>
       </nav>
 
       
@@ -232,7 +275,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
     
       
         
@@ -240,7 +283,7 @@
         
       
     
-    <li>strview</li>
+    <li>ftnew</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -248,113 +291,50 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
-                <h1 id="strview">strview</h1>
+                <h1 id="ftnew">ftnew</h1>
 <h2 id="abstract">Abstract</h2>
-<p>Retrieves a read-only string from the cache</p>
+<p>creates a new table of a given size</p>
 <h2 id="description">Description</h2>
-<p><code>strcache</code>/<code>strview</code> implement a global string cache. This can be useful in
-situations where a string needs to be stored/passed but only numbers are allowed
-(for example, when using the <code>event</code> opcode, or to be able to mix numbers and
-strings inside an array). It behaves similar to the <code>strset</code> / <code>strget</code> opcodes
-but automatically assigns an index to each distinct string inside the cache. The
-string returned by <code>strview</code> should not be modified. This is not enforced.</p>
-<p><code>strview</code> executes at <strong>i-time</strong>.</p>
+<p><code>ftnew</code> is a shortcut opcode to create a new table of a given size. It
+is possible to set the elements to an initial value (default=0). 
+It explicitely disallows the user to set the table-number manually. </p>
 <h2 id="syntax">Syntax</h2>
-<div class="codehilite"><pre><span></span><code>Sstr strview  idx
+<div class="codehilite"><pre><span></span><code><span class="kt">i</span><span class="n">tabnum</span> <span class="kt">f</span><span class="n">tnew</span> <span class="kt">i</span><span class="n">size</span><span class="p">,</span> <span class="p">[</span><span class="kt">i</span><span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-
-<h3 id="arguments">Arguments</h3>
+<h2 id="arguments">Arguments</h2>
 <ul>
-<li><code>idx</code> / <code>kdx</code>: the numeric id representing the string</li>
-<li><code>Sstr</code>: the string inside the cache, corresponding to <code>idx</code></li>
+<li><strong>isize</strong>: The size of the table.</li>
+<li><strong>idefault</strong>: The initial value for all items in the table (default=0)</li>
 </ul>
-<h3 id="execution-time">Execution Time</h3>
+<h2 id="output">Output</h2>
 <ul>
-<li>Init</li>
+<li><strong>itabnum</strong>: the number of the generated f-table</li>
+</ul>
+<h2 id="execution-time">Execution Time</h2>
+<ul>
+<li>Init </li>
 </ul>
 <h2 id="examples">Examples</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">CsoundSynthesizer</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">CsOptions</span><span class="o">&gt;</span>
-<span class="o">--</span><span class="n">nosound</span>
-<span class="o">&lt;/</span><span class="n">CsOptions</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">CsInstruments</span><span class="o">&gt;</span>
-
-<span class="cm">/*</span>
-
-<span class="cm">Example file for strcache / strview</span>
-
-<span class="cm">*/</span>
-
-<span class="c1">; Use strcache to pass multiple strings between instruments</span>
-<span class="kd">instr</span> <span class="nf">1</span>
-  <span class="nb">event_i</span> <span class="s">&quot;i&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">strcache</span><span class="p">(</span><span class="s">&quot;foo&quot;</span><span class="p">),</span> <span class="n">strcache</span><span class="p">(</span><span class="s">&quot;bar&quot;</span><span class="p">)</span>
-  <span class="nb">turnoff</span>
-<span class="kd">endin</span>
-
-<span class="kd">instr</span> <span class="nf">2</span>
-  <span class="c1">;; get a read-only string from the cache</span>
-  <span class="kt">S</span><span class="n">1</span> <span class="n">strview</span> <span class="vi">p4</span>
-  <span class="kt">S</span><span class="n">2</span> <span class="n">strview</span> <span class="vi">p5</span>
-  <span class="nb">prints</span> <span class="s">&quot;S1=</span><span class="si">%s</span><span class="s">   S2=</span><span class="si">%s</span><span class="s"> </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">S</span><span class="n">1</span><span class="p">,</span> <span class="kt">S</span><span class="n">2</span>
-  <span class="nb">turnoff</span>
-<span class="kd">endin</span>
-
-<span class="c1">;; Use strcache to store strings inside a numeric array</span>
-<span class="kd">instr</span> <span class="nf">3</span>
-  <span class="kt">i</span><span class="n">Struct</span><span class="p">[]</span> <span class="nb">fillarray</span> <span class="n">strcache</span><span class="p">(</span><span class="s">&quot;Bach&quot;</span><span class="p">),</span> <span class="mi">1675</span><span class="p">,</span> <span class="mi">1750</span>
-  <span class="nb">prints</span> <span class="s">&quot;Name = </span><span class="si">%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">strcache</span><span class="p">(</span><span class="kt">i</span><span class="n">Struct</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="kd">endin</span>
-
-<span class="c1">;; If the string does not need to be modified, strview</span>
-<span class="c1">;; can be used instead of strcache to retrieve a string</span>
-<span class="c1">;; from the cache. In this case, the string is not allocated,</span>
-<span class="c1">;; it only points to the version inside the cache. </span>
-<span class="kd">instr</span> <span class="nf">4</span>
-  <span class="kt">S</span><span class="n">1</span> <span class="o">=</span> <span class="s">&quot;foo bar&quot;</span>
-  <span class="kt">i</span><span class="n">S1</span> <span class="o">=</span> <span class="n">strcache</span><span class="p">(</span><span class="kt">S</span><span class="n">1</span><span class="p">)</span>
-  <span class="c1">;; S2 is a read-only view of the cached S1.</span>
-  <span class="kt">S</span><span class="n">2</span> <span class="o">=</span> <span class="n">strcache</span><span class="p">(</span><span class="kt">i</span><span class="n">S1</span><span class="p">)</span>
-  <span class="nb">prints</span> <span class="s">&quot;S2 = </span><span class="si">%s</span><span class="s"> </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">S</span><span class="n">2</span>
-  <span class="nb">turnoff</span>
-<span class="kd">endin</span>
-
-<span class="kd">instr</span> <span class="nf">test_same_idx</span>
-  <span class="kt">i</span><span class="n">dx1</span> <span class="o">=</span> <span class="n">strcache</span><span class="p">(</span><span class="s">&quot;foo&quot;</span><span class="p">)</span>
-  <span class="kt">i</span><span class="n">dx2</span> <span class="o">=</span> <span class="n">strcache</span><span class="p">(</span><span class="s">&quot;foo&quot;</span><span class="p">)</span>
-  <span class="nb">prints</span> <span class="s">&quot;These indices should be the same: idx1=</span><span class="si">%d</span><span class="s">, idx2=</span><span class="si">%d</span><span class="s"> </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">i</span><span class="n">dx1</span><span class="p">,</span> <span class="kt">i</span><span class="n">dx2</span>
-  <span class="nb">turnoff</span>
-<span class="kd">endin</span>
-
-<span class="kd">instr</span> <span class="nf">test_strview</span>
-  <span class="kt">S</span><span class="n">1</span> <span class="o">=</span> <span class="s">&quot;uniquestring&quot;</span>
-  <span class="kt">i</span><span class="n">dx1</span> <span class="o">=</span> <span class="n">strcache</span><span class="p">(</span><span class="kt">S</span><span class="n">1</span><span class="p">)</span>
-  <span class="kt">S</span><span class="n">view</span> <span class="o">=</span> <span class="n">strview</span><span class="p">(</span><span class="kt">i</span><span class="n">dx1</span><span class="p">)</span>
-  <span class="nb">prints</span> <span class="s">&quot;Sview = &#39;</span><span class="si">%s</span><span class="s">&#39; (should be &#39;</span><span class="si">%s</span><span class="s">&#39;) </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">S</span><span class="n">view</span><span class="p">,</span> <span class="kt">S</span><span class="n">1</span>
-  <span class="nb">turnoff</span>
-<span class="kd">endin</span>
-
-<span class="o">&lt;/</span><span class="n">CsInstruments</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">CsScore</span><span class="o">&gt;</span>
-
-<span class="c1">; i 1 0 0.1</span>
-<span class="c1">; i 3 + 0.1</span>
-<span class="c1">; i 4 + 0.1</span>
-<span class="nb">i</span> <span class="s">&quot;test_same_idx&quot;</span> <span class="mi">0</span> <span class="mi">1</span>
-
-<span class="c1">; i &quot;test_strview&quot; 0 1</span>
-<span class="o">&lt;/</span><span class="n">CsScore</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">CsoundSynthesizer</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span></span><code><span class="c1">; create a table from an array of any size</span>
+<span class="kt">i</span><span class="n">xs</span><span class="p">[]</span> <span class="nb">fillarray</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
+<span class="kt">i</span><span class="n">tab</span> <span class="kt">f</span><span class="n">tnew</span> <span class="nb">lenarray</span><span class="p">(</span><span class="kt">i</span><span class="n">xs</span><span class="p">)</span>
+<span class="nb">copya2ftab</span> <span class="kt">i</span><span class="n">xs</span><span class="p">,</span><span class="kt">i</span><span class="n">tab</span>
 </code></pre></div>
 
-
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://csound.com/docs/manual/ftgen.html">ftgen</a></li>
+<li><a href="http://www.csound.com/docs/manual/fillarray.html">fillarray</a></li>
+<li><a href="ftfill.html">ftfill</a></li>
+<li><a href="http://www.csound.com/docs/manual/ftfree.html">ftfree</a></li>
+</ul>
 <h2 id="credits">Credits</h2>
-<p>Eduardo Moguillansky, 2020</p>
+<p>Eduardo Moguillansky, 2021</p>
               
             </div>
           </div>
@@ -362,10 +342,10 @@ string returned by <code>strview</code> should not be modified. This is not enfo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sysPlatform.html" class="btn btn-neutral float-right" title="sysPlatform">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="ftsetparams.html" class="btn btn-neutral float-right" title="ftsetparams">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="strcache.html" class="btn btn-neutral" title="strcache"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="ftfind.html" class="btn btn-neutral" title="ftfind"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -388,17 +368,18 @@ string returned by <code>strview</code> should not be modified. This is not enfo
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="strcache.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="sysPlatform.html" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="ftfind.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="ftsetparams.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
