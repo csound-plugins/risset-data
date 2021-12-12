@@ -49,7 +49,7 @@
   "binaries": {
     "linux": {
       "url": "https://github.com/csound-plugins/csound-plugins/releases/download/latest/csound-plugins--linux.zip",
-      "extractpath": "libelse.so"
+      "extractpath": "libelse.so",
       "build_platform": "Ubuntu 16.04"
     },
     "macos": {
