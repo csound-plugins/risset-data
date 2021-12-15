@@ -24,5 +24,6 @@
         "beosc": {
         	"url": "https://github.com/csound-plugins/csound-plugins.git",
         	"path": "src/beosc"
+        }
     }
 }
