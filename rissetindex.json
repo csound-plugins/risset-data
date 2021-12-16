@@ -5,25 +5,9 @@
         	"url": "https://github.com/csound-plugins/csound-plugins.git",
         	"path": "src/else" 
         },
-        "poly": {
-        	"url": "https://github.com/csound-plugins/csound-plugins.git",
-        	"path": "src/poly"	
-        },
-        "klib": {
-        	"url": "https://github.com/csound-plugins/csound-plugins.git",
-        	"path": "src/klib"
-        },
-        "jsfx": {
-        	"url": "https://github.com/csound-plugins/csound-plugins.git",
-        	"path": "src/jsfx"
-        },
         "pathtools": {
         	"url": "https://github.com/csound-plugins/csound-plugins.git",
 			"path": "src/pathtools"
         },
-        "beosc": {
-        	"url": "https://github.com/csound-plugins/csound-plugins.git",
-        	"path": "src/beosc"
-        }
     }
 }
