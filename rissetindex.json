@@ -30,7 +30,7 @@
             "path": "src/sndmeta"
         },
         "vst3": {
-        	"url": "https://github.com/vst3-risset.git"
+        	"url": "https://github.com/csound-plugins/vst3-risset.git"
         }
     }
 }
