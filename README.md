@@ -103,7 +103,7 @@ The content of `risset.json` should be:
 
 Things to notice:
 
-* a plugin must include **at least one binary**. *risset* distributes only binaries so you need to build binaries and provide an URL from which the binary can be downloaded. A good place to put the binaries is as a release in the git repository of the plugin.
+* A plugin must include **at least one binary**. *risset* distributes only binaries so you need to build binaries and provide an URL from which the binary can be downloaded. A good place to put the binaries is as a release in the git repository of the plugin.
 * The url of a binary can point to the binary itself (a file with a .so, .dll or .dylib extension), or a .zip file. In this latter case, the binary needs to include an `extractpath` tag besides the url, pointing at the actual binary
 within the .zip structure, as in the example above
 * The `build_platform` tag is just for information to the user, indicating which platform was used to build the binary.
