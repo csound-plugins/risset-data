@@ -39,6 +39,10 @@
         "chua": {
         	"url": "https://github.com/csound-plugins/csound-externals.git",
         	"path": "risset/chua"
+        },
+        "hdf5": {
+        	"url": "https://github.com/csound-plugins/csound-externals.git",
+            "path": "risset/hdf5"
         }
     }
 }
