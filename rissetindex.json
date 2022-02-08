@@ -35,6 +35,10 @@
 		},
         "vst3": {
         	"url": "https://github.com/csound-plugins/vst3-risset.git"
+        },
+        "chua": {
+        	"url": "https://github.com/csound-plugins/csound-externals.git",
+        	"path": "risset/chua"
         }
     }
 }
