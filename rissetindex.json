@@ -43,6 +43,11 @@
         "hdf5": {
         	"url": "https://github.com/csound-plugins/csound-externals.git",
             "path": "risset/hdf5"
+        },
+        "python": {
+        	"url": "https://github.com/csound-plugins/csound-externals.git",
+            "path": "risset/py"
         }
+
     }
 }
