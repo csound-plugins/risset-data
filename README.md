@@ -12,17 +12,25 @@ This repository does not host any source code or binaries. Each plugin is define
 
 In order to install and manage the plugins defined here, `risset` needs to be installed:
 
-```bash
-pip3 install risset
-```
-
-Alternatively the latest pushed version can be installed via `git`
 
 ```bash
-git clone https://github.com/csound-plugins/risset
-cd risset
-python3 setup.py install
+pip install risset
 ```
+
+This will install the script "risset" into your path
+
+
+### Linux
+
+In certain linux distributions it is not allowed to install packages to the
+system python. In that case the recommended way is to install risset within
+its own virtual environment. On ubuntu this can be done via `pipx`:
+
+```bash
+sudo apt install pipx
+pipx install risset
+```
+
 
 ## Usage
 
