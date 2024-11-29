@@ -29,10 +29,14 @@
             "url": "https://github.com/csound-plugins/csound-plugins.git",
             "path": "src/sndmeta"
         },
-	"risset": {
-	    "url": "https://github.com/csound-plugins/csound-plugins.git",
-	    "path": "src/risset"
-	},
+		    "risset": {
+			      "url": "https://github.com/csound-plugins/csound-plugins.git",
+			      "path": "src/risset"
+		    },
+		    "poodle": {
+			      "url": "https://github.com/csound-plugins/csound-plugins.git",
+			      "path": "src/poodle"
+		    },
         "vst3": {
         	"url": "https://github.com/csound-plugins/vst3-risset.git"
         },
@@ -48,7 +52,7 @@
         	"url": "https://github.com/csound-plugins/csound-externals.git",
             "path": "risset/py"
         },
-	"genious": {
+	      "genious": {
             "url": "https://github.com/PvonN/GENious.git"
         }
     }
