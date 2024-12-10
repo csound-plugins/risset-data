@@ -5,7 +5,7 @@
 
 This repository hosts the index for all csound plugins defined in [risset], the csound package manager.
 
-This repository does not host any source code or binaries. Each plugin is defined within a git repository and cloned by *risset* itself. 
+This repository does not host any source code or binaries. Each plugin is defined within a git repository and cloned by *risset* itself.
 
 
 ## Installing plugins
@@ -66,11 +66,11 @@ myplugin/
   CMakeLists.txt
   risset.json
 ```
-  
+
 The source code or the cmake file are not needed, they are included just to show
 that it is possible to include the risset definition within the repository
 of the plugin's source itself.
-  
+
 The content of `risset.json` should be:
 
 ```json
@@ -83,28 +83,48 @@ The content of `risset.json` should be:
   "version": "0.1.0",
   "short_description": "Test opcodes",
   "long_description": "A set of opcodes to test risset",
-  "csound_version": "6.17",
   "author": "Alice",
   "email": "alice@email.com",
   "license": "LGPL",
   "repository": "https://github.com/alice/myplugin",
-  "doc_folder": "doc",
-  "binaries": {
-    "linux": {
-      "url": "https://github.com/alice/myplugin/releases/download/v0.1.0/myplugin.zip",
+  "binaries": [
+    {
+      "platform": "linux-x86_64",
+      "url": "https://github.com/alice/releases/myplugin-csound6.zip",
       "extractpath": "myplugin.so",
-      "build_platform": "Ubuntu 18.04"
+      "csound_version": ">=6.17<7.0"
     },
-    "macos": {
-      "url": "https://github.com/alice/myplugin/releases/download/v0.1.0/myplugin.zip",
-	  "extractpath": "myplugin.dylib",
-      "build_platform": "10.14.0"
+    {
+      "platform": "linux-x86_64",
+      "url": "https://github.com/alice/releases/myplugin-csound7.zip",
+      "extractpath": "myplugin.so",
+      "csound_version": ">=7.0"
     },
-    "windows": {
-      "url": "https://github.com/alice/myplugin/releases/download/v0.1.0/myplugin.dll",
-	  "build_platform": "Windows 10"
-    }
-  }
+    {
+      "platform": "macos-arm64",
+      "url": "https://github.com/alice/releases/myplugin-csound6.zip",
+      "extractpath": "myplugin.dylib",
+      "csound_version": ">=6.17<7.0"
+    },
+    {
+      "platform": "macos-arm64",
+      "url": "https://github.com/alice/releases/myplugin-csound7.zip",
+      "extractpath": "myplugin.dylib",
+      "csound_version": ">=7.0"
+    },
+    {
+      "platform": "windows-x86_64",
+      "url": "https://github.com/alice/releases/myplugin-csound6.zip",
+      "extractpath": "myplugin.dll",
+      "csound_version": ">=6.17<7.0"
+    },
+    {
+      "platform": "windows-x86_64",
+      "url": "https://github.com/alice/releases/myplugin-csound7.zip",
+      "extractpath": "myplugin.dll",
+      "csound_version": ">=7.0"
+    },
+  ]
 }
 
 ```
@@ -114,10 +134,10 @@ Things to notice:
 * A plugin must include **at least one binary**. *risset* distributes only binaries so you need to build binaries and provide an URL from which the binary can be downloaded. A good place to put the binaries is as a release in the git repository of the plugin.
 * The url of a binary can point to the binary itself (a file with a .so, .dll or .dylib extension), or a .zip file. In this latter case, the binary needs to include an `extractpath` tag besides the url, pointing at the actual binary
 within the .zip structure, as in the example above.
-* The `build_platform` tag is just for information to the user, indicating which platform was used to build the binary.
 * It is highly recommended to add one manual page per opcode. These will be indexed and used to build a global manual for all plugins defined within risset. Use this as a template: https://github.com/csound-plugins/csound-plugins/blob/master/src/else/doc/zeroarray.md
-* The doc folder with the manual pages for each opcode is declared as a relative 
-path to the `risset.json` file. It should include one manual file for each opcode. 
+* The doc folder with the manual pages for each opcode is declared as a relative
+path to the `risset.json` file. By default risset searches for a "doc" folder in the same directory as
+the risset.json file. It should include one manual file for each opcode, in markdown format.
  Use this as a template: https://github.com/csound-plugins/csound-plugins/blob/master/src/else/doc/zeroarray.md
 
 
