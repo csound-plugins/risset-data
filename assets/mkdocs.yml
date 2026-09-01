@@ -1,5 +1,15 @@
 site_name: Csound Plugins
-theme: readthedocs
+theme: 
+    name: readthedocs
+    #highlightjs: true
+    #hljs_languages:
+    #    - csound
+    include_homepage_in_sidebar: false
+    prev_next_buttons_location: none
+    titles_only: false
+    sticky-navigation: false
+    navigation_depth: 1
+    
 extra_css:
     - css/syntax-highlighting.css
     
@@ -10,3 +20,4 @@ markdown_extensions:
     - admonition
 
 use_directory_urls: false
+
