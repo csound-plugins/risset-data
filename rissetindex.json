@@ -58,6 +58,12 @@
     },
     "genious": {
       "url": "https://github.com/PvonN/GENious.git"
+    },
+    "semsys": {
+      "url": "https://github.com/PasqualeMainolfi/csound-semsys.git"
+    },
+    "watch": {
+      "url": "https://github.com/PasqualeMainolfi/csound-watch.git"
     }
   }
 }
