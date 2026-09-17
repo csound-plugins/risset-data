@@ -64,6 +64,9 @@
     },
     "watch": {
       "url": "https://github.com/PasqualeMainolfi/csound-watch.git"
+    },
+    "csnum": {
+      "url": "https://github.com/PasqualeMainolfi/csound-numeric.git"
     }
   }
 }
